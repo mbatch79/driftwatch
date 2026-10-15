@@ -1,0 +1,49 @@
+# SCOUT source registry — clean-channel sources only (GitHub-hosted machine-readable specs).
+# tier: clean = git/RSS/API, no browser needed. walled = headless+proxy (not in Cycle 1).
+# diff_kind: openapi = structural OpenAPI diff; changelog = markdown section diff.
+
+sources:
+  - id: stripe
+    vendor: Stripe
+    repo: https://github.com/stripe/openapi.git
+    branch: master
+    paths: [openapi/spec3.json]
+    diff_kind: openapi
+    tier: clean
+    ecosystems: [npm:stripe, pypi:stripe, rubygems:stripe, go:github.com/stripe/stripe-go]
+
+  - id: openai
+    vendor: OpenAI
+    repo: https://github.com/openai/openai-openapi.git
+    branch: main
+    paths: [openapi.json]
+    diff_kind: openapi
+    tier: clean
+    ecosystems: [npm:openai, pypi:openai]
+
+  - id: twilio
+    vendor: Twilio
+    repo: https://github.com/twilio/twilio-oai.git
+    branch: main
+    paths: [spec/json/twilio_api_v2010.json, spec/json/twilio_messaging_v1.json]
+    diff_kind: openapi
+    tier: clean
+    ecosystems: [npm:twilio, pypi:twilio]
+
+  - id: aws-sdk-js
+    vendor: AWS (JS SDK v3)
+    repo: https://github.com/aws/aws-sdk-js-v3.git
+    branch: main
+    paths: [CHANGELOG.md]
+    diff_kind: changelog
+    tier: clean
+    ecosystems: [npm:@aws-sdk/*]
+
+  - id: shopify-api-js
+    vendor: Shopify (API JS)
+    repo: https://github.com/Shopify/shopify-app-js.git
+    branch: main
+    paths: [packages/apps/shopify-api/CHANGELOG.md]
+    diff_kind: changelog
+    tier: clean
+    ecosystems: [npm:@shopify/shopify-api]

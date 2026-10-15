@@ -1,0 +1,3385 @@
+[
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /v1/apps/installs",
+  "detail": "Endpoint added: GET /v1/apps/installs",
+  "symbols": [
+   "/v1/apps/installs"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /v1/apps/installs/{id}",
+  "detail": "Endpoint added: GET /v1/apps/installs/{id}",
+  "symbols": [
+   "/v1/apps/installs/{id}"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /v1/billing/feedback_options",
+  "detail": "Endpoint added: GET /v1/billing/feedback_options",
+  "symbols": [
+   "/v1/billing/feedback_options"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /v1/billing/feedback_options/{id}",
+  "detail": "Endpoint added: GET /v1/billing/feedback_options/{id}",
+  "symbols": [
+   "/v1/billing/feedback_options/{id}"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /v1/product_catalog/trial_offers",
+  "detail": "Endpoint added: GET /v1/product_catalog/trial_offers",
+  "symbols": [
+   "/v1/product_catalog/trial_offers"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /v1/product_catalog/trial_offers/{id}",
+  "detail": "Endpoint added: GET /v1/product_catalog/trial_offers/{id}",
+  "symbols": [
+   "/v1/product_catalog/trial_offers/{id}"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /v1/tax/locations",
+  "detail": "Endpoint added: GET /v1/tax/locations",
+  "symbols": [
+   "/v1/tax/locations"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /v1/tax/locations/{location}",
+  "detail": "Endpoint added: GET /v1/tax/locations/{location}",
+  "symbols": [
+   "/v1/tax/locations/{location}"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /v1/three_d_secure/authentications",
+  "detail": "Endpoint added: GET /v1/three_d_secure/authentications",
+  "symbols": [
+   "/v1/three_d_secure/authentications"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /v1/three_d_secure/authentications/{authentication}",
+  "detail": "Endpoint added: GET /v1/three_d_secure/authentications/{authentication}",
+  "symbols": [
+   "/v1/three_d_secure/authentications/{authentication}"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /v1/apps/installs",
+  "detail": "Endpoint added: POST /v1/apps/installs",
+  "symbols": [
+   "/v1/apps/installs"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /v1/apps/installs/{id}",
+  "detail": "Endpoint added: POST /v1/apps/installs/{id}",
+  "symbols": [
+   "/v1/apps/installs/{id}"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /v1/apps/installs/{id}/uninstall",
+  "detail": "Endpoint added: POST /v1/apps/installs/{id}/uninstall",
+  "symbols": [
+   "/v1/apps/installs/{id}/uninstall"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /v1/billing/feedback_options",
+  "detail": "Endpoint added: POST /v1/billing/feedback_options",
+  "symbols": [
+   "/v1/billing/feedback_options"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /v1/billing/feedback_options/{id}",
+  "detail": "Endpoint added: POST /v1/billing/feedback_options/{id}",
+  "symbols": [
+   "/v1/billing/feedback_options/{id}"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /v1/billing/feedback_options/{id}/deactivate",
+  "detail": "Endpoint added: POST /v1/billing/feedback_options/{id}/deactivate",
+  "symbols": [
+   "/v1/billing/feedback_options/{id}/deactivate"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /v1/product_catalog/trial_offers",
+  "detail": "Endpoint added: POST /v1/product_catalog/trial_offers",
+  "symbols": [
+   "/v1/product_catalog/trial_offers"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /v1/product_catalog/trial_offers/{id}",
+  "detail": "Endpoint added: POST /v1/product_catalog/trial_offers/{id}",
+  "symbols": [
+   "/v1/product_catalog/trial_offers/{id}"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /v1/subscriptions/{subscription}/pause",
+  "detail": "Endpoint added: POST /v1/subscriptions/{subscription}/pause",
+  "symbols": [
+   "/v1/subscriptions/{subscription}/pause"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /v1/tax/locations",
+  "detail": "Endpoint added: POST /v1/tax/locations",
+  "symbols": [
+   "/v1/tax/locations"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /v1/three_d_secure/authentications",
+  "detail": "Endpoint added: POST /v1/three_d_secure/authentications",
+  "symbols": [
+   "/v1/three_d_secure/authentications"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /v1/three_d_secure/authentications/{authentication}/cancel",
+  "detail": "Endpoint added: POST /v1/three_d_secure/authentications/{authentication}/cancel",
+  "symbols": [
+   "/v1/three_d_secure/authentications/{authentication}/cancel"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /v1/three_d_secure/authentications/{authentication}/submit",
+  "detail": "Endpoint added: POST /v1/three_d_secure/authentications/{authentication}/submit",
+  "symbols": [
+   "/v1/three_d_secure/authentications/{authentication}/submit"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "BREAKING",
+  "kind": "body_prop_renamed",
+  "locator": "/paths/POST /v1/checkout/sessions/requestBody/properties/payment_method_types",
+  "detail": "Request body field RENAMED on POST /v1/checkout/sessions: payment_method_types -> allowed_payment_method_types",
+  "symbols": [
+   "/v1/checkout/sessions",
+   "payment_method_types"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "rename target re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "BREAKING",
+  "kind": "body_prop_removed",
+  "locator": "/paths/POST /v1/payment_intents/requestBody/properties/payment_method_types",
+  "detail": "Request body field removed on POST /v1/payment_intents: payment_method_types (successor already present: allowed_payment_method_types)",
+  "symbols": [
+   "/v1/payment_intents",
+   "payment_method_types"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "body prop re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "BREAKING",
+  "kind": "body_prop_removed",
+  "locator": "/paths/POST /v1/payment_intents/{intent}/requestBody/properties/payment_method_types",
+  "detail": "Request body field removed on POST /v1/payment_intents/{intent}: payment_method_types (successor already present: allowed_payment_method_types)",
+  "symbols": [
+   "/v1/payment_intents/{intent}",
+   "payment_method_types"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "body prop re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "BREAKING",
+  "kind": "body_prop_removed",
+  "locator": "/paths/POST /v1/payment_intents/{intent}/confirm/requestBody/properties/payment_method_types",
+  "detail": "Request body field removed on POST /v1/payment_intents/{intent}/confirm: payment_method_types (successor already present: allowed_payment_method_types)",
+  "symbols": [
+   "/v1/payment_intents/{intent}/confirm",
+   "payment_method_types"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "body prop re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "BREAKING",
+  "kind": "body_prop_removed",
+  "locator": "/paths/POST /v1/payment_methods/{payment_method}/requestBody/properties/payto",
+  "detail": "Request body field removed on POST /v1/payment_methods/{payment_method}: payto",
+  "symbols": [
+   "/v1/payment_methods/{payment_method}",
+   "payto"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "body prop re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "BREAKING",
+  "kind": "body_prop_removed",
+  "locator": "/paths/POST /v1/setup_intents/requestBody/properties/payment_method_types",
+  "detail": "Request body field removed on POST /v1/setup_intents: payment_method_types (successor already present: allowed_payment_method_types)",
+  "symbols": [
+   "/v1/setup_intents",
+   "payment_method_types"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "body prop re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "BREAKING",
+  "kind": "body_prop_removed",
+  "locator": "/paths/POST /v1/setup_intents/{intent}/requestBody/properties/payment_method_types",
+  "detail": "Request body field removed on POST /v1/setup_intents/{intent}: payment_method_types (successor already present: allowed_payment_method_types)",
+  "symbols": [
+   "/v1/setup_intents/{intent}",
+   "payment_method_types"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "body prop re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "BREAKING",
+  "kind": "schema_removed",
+  "locator": "/components/schemas/alma_installments",
+  "detail": "Schema removed: alma_installments",
+  "symbols": [
+   "alma_installments"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "schema presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "BREAKING",
+  "kind": "schema_removed",
+  "locator": "/components/schemas/payment_method_details_konbini_store",
+  "detail": "Schema removed: payment_method_details_konbini_store",
+  "symbols": [
+   "payment_method_details_konbini_store"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "schema presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/bank_connections_resource_link_account_session_filters/properties/countries",
+  "detail": "Property removed from bank_connections_resource_link_account_session_filters: countries",
+  "symbols": [
+   "bank_connections_resource_link_account_session_filters"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "prop presence re-checked"
+ },
+ {
+  "source_id": "stripe",
+  "file": "openapi/spec3.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/payments_primitives_payment_records_resource_payment_method_card_details_resource_three_d_secure/properties/cryptogram",
+  "detail": "Property removed from payments_primitives_payment_records_resource_payment_method_card_details_resource_three_d_secure: cryptogram",
+  "symbols": [
+   "payments_primitives_payment_records_resource_payment_method_card_details_resource_three_d_secure"
+  ],
+  "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
+  "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "verified": true,
+  "warden_reason": "prop presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "endpoint_removed",
+  "locator": "/paths/POST /evals/{eval_id}/runs/{run_id}",
+  "detail": "Endpoint removed: POST /evals/{eval_id}/runs/{run_id}",
+  "symbols": [
+   "/evals/{eval_id}/runs/{run_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/DELETE /agents/environments/templates/{environment_template_id}",
+  "detail": "Endpoint added: DELETE /agents/environments/templates/{environment_template_id}",
+  "symbols": [
+   "/agents/environments/templates/{environment_template_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/DELETE /agents/sessions/{session_id}",
+  "detail": "Endpoint added: DELETE /agents/sessions/{session_id}",
+  "symbols": [
+   "/agents/sessions/{session_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/DELETE /agents/sessions/{session_id}/artifacts/{artifact_id}",
+  "detail": "Endpoint added: DELETE /agents/sessions/{session_id}/artifacts/{artifact_id}",
+  "symbols": [
+   "/agents/sessions/{session_id}/artifacts/{artifact_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/DELETE /agents/{agent_id}",
+  "detail": "Endpoint added: DELETE /agents/{agent_id}",
+  "symbols": [
+   "/agents/{agent_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/DELETE /organization/external_storage/{external_storage_id}",
+  "detail": "Endpoint added: DELETE /organization/external_storage/{external_storage_id}",
+  "symbols": [
+   "/organization/external_storage/{external_storage_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/DELETE /vaults/{vault_id}",
+  "detail": "Endpoint added: DELETE /vaults/{vault_id}",
+  "symbols": [
+   "/vaults/{vault_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/DELETE /vaults/{vault_id}/credentials/{credential_id}",
+  "detail": "Endpoint added: DELETE /vaults/{vault_id}/credentials/{credential_id}",
+  "symbols": [
+   "/vaults/{vault_id}/credentials/{credential_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/DELETE /webhook_endpoints/{webhook_endpoint_id}",
+  "detail": "Endpoint added: DELETE /webhook_endpoints/{webhook_endpoint_id}",
+  "symbols": [
+   "/webhook_endpoints/{webhook_endpoint_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents",
+  "detail": "Endpoint added: GET /agents",
+  "symbols": [
+   "/agents"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/environments",
+  "detail": "Endpoint added: GET /agents/environments",
+  "symbols": [
+   "/agents/environments"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/environments/templates",
+  "detail": "Endpoint added: GET /agents/environments/templates",
+  "symbols": [
+   "/agents/environments/templates"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/environments/templates/{environment_template_id}",
+  "detail": "Endpoint added: GET /agents/environments/templates/{environment_template_id}",
+  "symbols": [
+   "/agents/environments/templates/{environment_template_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/environments/{environment_id}",
+  "detail": "Endpoint added: GET /agents/environments/{environment_id}",
+  "symbols": [
+   "/agents/environments/{environment_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/environments/{environment_id}/files",
+  "detail": "Endpoint added: GET /agents/environments/{environment_id}/files",
+  "symbols": [
+   "/agents/environments/{environment_id}/files"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions",
+  "detail": "Endpoint added: GET /agents/sessions",
+  "symbols": [
+   "/agents/sessions"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}",
+  "symbols": [
+   "/agents/sessions/{session_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/artifacts",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/artifacts",
+  "symbols": [
+   "/agents/sessions/{session_id}/artifacts"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/artifacts/{artifact_id}",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/artifacts/{artifact_id}",
+  "symbols": [
+   "/agents/sessions/{session_id}/artifacts/{artifact_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/artifacts/{artifact_id}/content",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/artifacts/{artifact_id}/content",
+  "symbols": [
+   "/agents/sessions/{session_id}/artifacts/{artifact_id}/content"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/events",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/events",
+  "symbols": [
+   "/agents/sessions/{session_id}/events"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/items",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/items",
+  "symbols": [
+   "/agents/sessions/{session_id}/items"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/subagents",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/subagents",
+  "symbols": [
+   "/agents/sessions/{session_id}/subagents"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/subagents/{subagent_id}",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/subagents/{subagent_id}",
+  "symbols": [
+   "/agents/sessions/{session_id}/subagents/{subagent_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/subagents/{subagent_id}/items",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/subagents/{subagent_id}/items",
+  "symbols": [
+   "/agents/sessions/{session_id}/subagents/{subagent_id}/items"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/subagents/{subagent_id}/turns",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/subagents/{subagent_id}/turns",
+  "symbols": [
+   "/agents/sessions/{session_id}/subagents/{subagent_id}/turns"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}",
+  "symbols": [
+   "/agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}/items",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}/items",
+  "symbols": [
+   "/agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}/items"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/traces",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/traces",
+  "symbols": [
+   "/agents/sessions/{session_id}/traces"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/turns",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/turns",
+  "symbols": [
+   "/agents/sessions/{session_id}/turns"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/turns/{turn_id}",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/turns/{turn_id}",
+  "symbols": [
+   "/agents/sessions/{session_id}/turns/{turn_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/sessions/{session_id}/turns/{turn_id}/items",
+  "detail": "Endpoint added: GET /agents/sessions/{session_id}/turns/{turn_id}/items",
+  "symbols": [
+   "/agents/sessions/{session_id}/turns/{turn_id}/items"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/{agent_id}",
+  "detail": "Endpoint added: GET /agents/{agent_id}",
+  "symbols": [
+   "/agents/{agent_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /live/sessions/{session_id}/content",
+  "detail": "Endpoint added: GET /live/sessions/{session_id}/content",
+  "symbols": [
+   "/live/sessions/{session_id}/content"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /organization/external_storage",
+  "detail": "Endpoint added: GET /organization/external_storage",
+  "symbols": [
+   "/organization/external_storage"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /organization/external_storage/{external_storage_id}",
+  "detail": "Endpoint added: GET /organization/external_storage/{external_storage_id}",
+  "symbols": [
+   "/organization/external_storage/{external_storage_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /organization/usage/decisions",
+  "detail": "Endpoint added: GET /organization/usage/decisions",
+  "symbols": [
+   "/organization/usage/decisions"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /safety/alerts/{id}",
+  "detail": "Endpoint added: GET /safety/alerts/{id}",
+  "symbols": [
+   "/safety/alerts/{id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /safety/cases/{id}",
+  "detail": "Endpoint added: GET /safety/cases/{id}",
+  "symbols": [
+   "/safety/cases/{id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /vaults",
+  "detail": "Endpoint added: GET /vaults",
+  "symbols": [
+   "/vaults"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /vaults/{vault_id}",
+  "detail": "Endpoint added: GET /vaults/{vault_id}",
+  "symbols": [
+   "/vaults/{vault_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /vaults/{vault_id}/credentials",
+  "detail": "Endpoint added: GET /vaults/{vault_id}/credentials",
+  "symbols": [
+   "/vaults/{vault_id}/credentials"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /vaults/{vault_id}/credentials/{credential_id}",
+  "detail": "Endpoint added: GET /vaults/{vault_id}/credentials/{credential_id}",
+  "symbols": [
+   "/vaults/{vault_id}/credentials/{credential_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /webhook_endpoints",
+  "detail": "Endpoint added: GET /webhook_endpoints",
+  "symbols": [
+   "/webhook_endpoints"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /webhook_endpoints/{webhook_endpoint_id}",
+  "detail": "Endpoint added: GET /webhook_endpoints/{webhook_endpoint_id}",
+  "symbols": [
+   "/webhook_endpoints/{webhook_endpoint_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /webhook_event_types",
+  "detail": "Endpoint added: GET /webhook_event_types",
+  "symbols": [
+   "/webhook_event_types"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents",
+  "detail": "Endpoint added: POST /agents",
+  "symbols": [
+   "/agents"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents/environments",
+  "detail": "Endpoint added: POST /agents/environments",
+  "symbols": [
+   "/agents/environments"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents/environments/templates",
+  "detail": "Endpoint added: POST /agents/environments/templates",
+  "symbols": [
+   "/agents/environments/templates"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents/environments/templates/{environment_template_id}",
+  "detail": "Endpoint added: POST /agents/environments/templates/{environment_template_id}",
+  "symbols": [
+   "/agents/environments/templates/{environment_template_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents/environments/{environment_id}/files",
+  "detail": "Endpoint added: POST /agents/environments/{environment_id}/files",
+  "symbols": [
+   "/agents/environments/{environment_id}/files"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents/sessions",
+  "detail": "Endpoint added: POST /agents/sessions",
+  "symbols": [
+   "/agents/sessions"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents/sessions/{session_id}",
+  "detail": "Endpoint added: POST /agents/sessions/{session_id}",
+  "symbols": [
+   "/agents/sessions/{session_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents/sessions/{session_id}/events",
+  "detail": "Endpoint added: POST /agents/sessions/{session_id}/events",
+  "symbols": [
+   "/agents/sessions/{session_id}/events"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents/{agent_id}",
+  "detail": "Endpoint added: POST /agents/{agent_id}",
+  "symbols": [
+   "/agents/{agent_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /decisions",
+  "detail": "Endpoint added: POST /decisions",
+  "symbols": [
+   "/decisions"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /evals/{eval_id}/runs/{run_id}/cancel",
+  "detail": "Endpoint added: POST /evals/{eval_id}/runs/{run_id}/cancel",
+  "symbols": [
+   "/evals/{eval_id}/runs/{run_id}/cancel"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /live/sessions",
+  "detail": "Endpoint added: POST /live/sessions",
+  "symbols": [
+   "/live/sessions"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /live/sessions/{session_id}/accept",
+  "detail": "Endpoint added: POST /live/sessions/{session_id}/accept",
+  "symbols": [
+   "/live/sessions/{session_id}/accept"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /live/sessions/{session_id}/fork",
+  "detail": "Endpoint added: POST /live/sessions/{session_id}/fork",
+  "symbols": [
+   "/live/sessions/{session_id}/fork"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /live/sessions/{session_id}/hangup",
+  "detail": "Endpoint added: POST /live/sessions/{session_id}/hangup",
+  "symbols": [
+   "/live/sessions/{session_id}/hangup"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /live/sessions/{session_id}/refer",
+  "detail": "Endpoint added: POST /live/sessions/{session_id}/refer",
+  "symbols": [
+   "/live/sessions/{session_id}/refer"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /live/sessions/{session_id}/reject",
+  "detail": "Endpoint added: POST /live/sessions/{session_id}/reject",
+  "symbols": [
+   "/live/sessions/{session_id}/reject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /organization/external_storage",
+  "detail": "Endpoint added: POST /organization/external_storage",
+  "symbols": [
+   "/organization/external_storage"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /organization/external_storage/{external_storage_id}/validate",
+  "detail": "Endpoint added: POST /organization/external_storage/{external_storage_id}/validate",
+  "symbols": [
+   "/organization/external_storage/{external_storage_id}/validate"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /organization/projects/{project_id}/api_keys/{api_key_id}",
+  "detail": "Endpoint added: POST /organization/projects/{project_id}/api_keys/{api_key_id}",
+  "symbols": [
+   "/organization/projects/{project_id}/api_keys/{api_key_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /vaults",
+  "detail": "Endpoint added: POST /vaults",
+  "symbols": [
+   "/vaults"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /vaults/{vault_id}",
+  "detail": "Endpoint added: POST /vaults/{vault_id}",
+  "symbols": [
+   "/vaults/{vault_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /vaults/{vault_id}/credentials",
+  "detail": "Endpoint added: POST /vaults/{vault_id}/credentials",
+  "symbols": [
+   "/vaults/{vault_id}/credentials"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /vaults/{vault_id}/credentials/{credential_id}",
+  "detail": "Endpoint added: POST /vaults/{vault_id}/credentials/{credential_id}",
+  "symbols": [
+   "/vaults/{vault_id}/credentials/{credential_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /webhook_endpoints",
+  "detail": "Endpoint added: POST /webhook_endpoints",
+  "symbols": [
+   "/webhook_endpoints"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /webhook_endpoints/{webhook_endpoint_id}",
+  "detail": "Endpoint added: POST /webhook_endpoints/{webhook_endpoint_id}",
+  "symbols": [
+   "/webhook_endpoints/{webhook_endpoint_id}"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /webhook_endpoints/{webhook_endpoint_id}/rotate_secret",
+  "detail": "Endpoint added: POST /webhook_endpoints/{webhook_endpoint_id}/rotate_secret",
+  "symbols": [
+   "/webhook_endpoints/{webhook_endpoint_id}/rotate_secret"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /webhook_endpoints/{webhook_endpoint_id}/test",
+  "detail": "Endpoint added: POST /webhook_endpoints/{webhook_endpoint_id}/test",
+  "symbols": [
+   "/webhook_endpoints/{webhook_endpoint_id}/test"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "endpoint presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "endpoint_deprecated",
+  "locator": "/paths/POST /images/variations/deprecated",
+  "detail": "Endpoint marked deprecated: POST /images/variations",
+  "symbols": [
+   "/images/variations"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "deprecated flag re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/AudioTranscriptionResponse/properties/language/type",
+  "detail": "Now nullable on AudioTranscriptionResponse.language: string -> ['string', 'null']",
+  "symbols": [
+   "AudioTranscriptionResponse"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/Batch/properties/cancelled_at/type",
+  "detail": "Now nullable on Batch.cancelled_at: integer -> ['integer', 'null']",
+  "symbols": [
+   "Batch"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/Batch/properties/cancelling_at/type",
+  "detail": "Now nullable on Batch.cancelling_at: integer -> ['integer', 'null']",
+  "symbols": [
+   "Batch"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/Batch/properties/completed_at/type",
+  "detail": "Now nullable on Batch.completed_at: integer -> ['integer', 'null']",
+  "symbols": [
+   "Batch"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/Batch/properties/error_file_id/type",
+  "detail": "Now nullable on Batch.error_file_id: string -> ['string', 'null']",
+  "symbols": [
+   "Batch"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/Batch/properties/errors/type",
+  "detail": "Now nullable on Batch.errors: object -> ['object', 'null']",
+  "symbols": [
+   "Batch"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/Batch/properties/expired_at/type",
+  "detail": "Now nullable on Batch.expired_at: integer -> ['integer', 'null']",
+  "symbols": [
+   "Batch"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/Batch/properties/expires_at/type",
+  "detail": "Now nullable on Batch.expires_at: integer -> ['integer', 'null']",
+  "symbols": [
+   "Batch"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/Batch/properties/failed_at/type",
+  "detail": "Now nullable on Batch.failed_at: integer -> ['integer', 'null']",
+  "symbols": [
+   "Batch"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/Batch/properties/finalizing_at/type",
+  "detail": "Now nullable on Batch.finalizing_at: integer -> ['integer', 'null']",
+  "symbols": [
+   "Batch"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/Batch/properties/in_progress_at/type",
+  "detail": "Now nullable on Batch.in_progress_at: integer -> ['integer', 'null']",
+  "symbols": [
+   "Batch"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/Batch/properties/output_file_id/type",
+  "detail": "Now nullable on Batch.output_file_id: string -> ['string', 'null']",
+  "symbols": [
+   "Batch"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "schema_prop_deprecated",
+  "locator": "/components/schemas/BetaMCPTool/properties/connector_id/deprecated",
+  "detail": "Property deprecated on BetaMCPTool: connector_id",
+  "symbols": [
+   "BetaMCPTool"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "deprecated re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/BetaModelResponseProperties/properties/user/type",
+  "detail": "Now nullable on BetaModelResponseProperties.user: string -> ['string', 'null']",
+  "symbols": [
+   "BetaModelResponseProperties"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/BetaResponseFunctionCallArgumentsDoneEvent/properties/name",
+  "detail": "Property removed from BetaResponseFunctionCallArgumentsDoneEvent: name",
+  "symbols": [
+   "BetaResponseFunctionCallArgumentsDoneEvent"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "prop presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/ChatCompletionList/properties/first_id/type",
+  "detail": "Now nullable on ChatCompletionList.first_id: string -> ['string', 'null']",
+  "symbols": [
+   "ChatCompletionList"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/ChatCompletionList/properties/last_id/type",
+  "detail": "Now nullable on ChatCompletionList.last_id: string -> ['string', 'null']",
+  "symbols": [
+   "ChatCompletionList"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/ChatCompletionMessageList/properties/first_id/type",
+  "detail": "Now nullable on ChatCompletionMessageList.first_id: string -> ['string', 'null']",
+  "symbols": [
+   "ChatCompletionMessageList"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/ChatCompletionMessageList/properties/last_id/type",
+  "detail": "Now nullable on ChatCompletionMessageList.last_id: string -> ['string', 'null']",
+  "symbols": [
+   "ChatCompletionMessageList"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/ChatCompletionResponseMessage/properties/function_call/type",
+  "detail": "Now nullable on ChatCompletionResponseMessage.function_call: object -> ['object', 'null']",
+  "symbols": [
+   "ChatCompletionResponseMessage"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateCompletionRequest/properties/best_of/type",
+  "detail": "Now nullable on CreateCompletionRequest.best_of: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateCompletionRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateCompletionRequest/properties/echo/type",
+  "detail": "Now nullable on CreateCompletionRequest.echo: boolean -> ['boolean', 'null']",
+  "symbols": [
+   "CreateCompletionRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateCompletionRequest/properties/frequency_penalty/type",
+  "detail": "Now nullable on CreateCompletionRequest.frequency_penalty: number -> ['number', 'null']",
+  "symbols": [
+   "CreateCompletionRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateCompletionRequest/properties/logit_bias/type",
+  "detail": "Now nullable on CreateCompletionRequest.logit_bias: object -> ['object', 'null']",
+  "symbols": [
+   "CreateCompletionRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateCompletionRequest/properties/logprobs/type",
+  "detail": "Now nullable on CreateCompletionRequest.logprobs: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateCompletionRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateCompletionRequest/properties/max_tokens/type",
+  "detail": "Now nullable on CreateCompletionRequest.max_tokens: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateCompletionRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateCompletionRequest/properties/n/type",
+  "detail": "Now nullable on CreateCompletionRequest.n: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateCompletionRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateCompletionRequest/properties/presence_penalty/type",
+  "detail": "Now nullable on CreateCompletionRequest.presence_penalty: number -> ['number', 'null']",
+  "symbols": [
+   "CreateCompletionRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateCompletionRequest/properties/seed/type",
+  "detail": "Now nullable on CreateCompletionRequest.seed: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateCompletionRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateCompletionRequest/properties/stream/type",
+  "detail": "Now nullable on CreateCompletionRequest.stream: boolean -> ['boolean', 'null']",
+  "symbols": [
+   "CreateCompletionRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateCompletionRequest/properties/suffix/type",
+  "detail": "Now nullable on CreateCompletionRequest.suffix: string -> ['string', 'null']",
+  "symbols": [
+   "CreateCompletionRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateCompletionRequest/properties/temperature/type",
+  "detail": "Now nullable on CreateCompletionRequest.temperature: number -> ['number', 'null']",
+  "symbols": [
+   "CreateCompletionRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateCompletionRequest/properties/top_p/type",
+  "detail": "Now nullable on CreateCompletionRequest.top_p: number -> ['number', 'null']",
+  "symbols": [
+   "CreateCompletionRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateFineTuningJobRequest/properties/integrations/type",
+  "detail": "Now nullable on CreateFineTuningJobRequest.integrations: array -> ['array', 'null']",
+  "symbols": [
+   "CreateFineTuningJobRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateFineTuningJobRequest/properties/seed/type",
+  "detail": "Now nullable on CreateFineTuningJobRequest.seed: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateFineTuningJobRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateFineTuningJobRequest/properties/suffix/type",
+  "detail": "Now nullable on CreateFineTuningJobRequest.suffix: string -> ['string', 'null']",
+  "symbols": [
+   "CreateFineTuningJobRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateFineTuningJobRequest/properties/validation_file/type",
+  "detail": "Now nullable on CreateFineTuningJobRequest.validation_file: string -> ['string', 'null']",
+  "symbols": [
+   "CreateFineTuningJobRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateImageEditRequest/properties/n/type",
+  "detail": "Now nullable on CreateImageEditRequest.n: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateImageEditRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateImageEditRequest/properties/output_compression/type",
+  "detail": "Now nullable on CreateImageEditRequest.output_compression: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateImageEditRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateImageEditRequest/properties/response_format/type",
+  "detail": "Now nullable on CreateImageEditRequest.response_format: string -> ['string', 'null']",
+  "symbols": [
+   "CreateImageEditRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "schema_prop_deprecated",
+  "locator": "/components/schemas/CreateImageEditRequest/properties/response_format/deprecated",
+  "detail": "Property deprecated on CreateImageEditRequest: response_format",
+  "symbols": [
+   "CreateImageEditRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "deprecated re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateImageEditRequest/properties/stream/type",
+  "detail": "Now nullable on CreateImageEditRequest.stream: boolean -> ['boolean', 'null']",
+  "symbols": [
+   "CreateImageEditRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateImageRequest/properties/n/type",
+  "detail": "Now nullable on CreateImageRequest.n: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateImageRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateImageRequest/properties/output_compression/type",
+  "detail": "Now nullable on CreateImageRequest.output_compression: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateImageRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateImageRequest/properties/response_format/type",
+  "detail": "Now nullable on CreateImageRequest.response_format: string -> ['string', 'null']",
+  "symbols": [
+   "CreateImageRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "schema_prop_deprecated",
+  "locator": "/components/schemas/CreateImageRequest/properties/response_format/deprecated",
+  "detail": "Property deprecated on CreateImageRequest: response_format",
+  "symbols": [
+   "CreateImageRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "deprecated re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateImageRequest/properties/stream/type",
+  "detail": "Now nullable on CreateImageRequest.stream: boolean -> ['boolean', 'null']",
+  "symbols": [
+   "CreateImageRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateImageRequest/properties/style/type",
+  "detail": "Now nullable on CreateImageRequest.style: string -> ['string', 'null']",
+  "symbols": [
+   "CreateImageRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "schema_prop_deprecated",
+  "locator": "/components/schemas/CreateImageRequest/properties/style/deprecated",
+  "detail": "Property deprecated on CreateImageRequest: style",
+  "symbols": [
+   "CreateImageRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "deprecated re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateImageVariationRequest/properties/n/type",
+  "detail": "Now nullable on CreateImageVariationRequest.n: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateImageVariationRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateImageVariationRequest/properties/response_format/type",
+  "detail": "Now nullable on CreateImageVariationRequest.response_format: string -> ['string', 'null']",
+  "symbols": [
+   "CreateImageVariationRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateImageVariationRequest/properties/size/type",
+  "detail": "Now nullable on CreateImageVariationRequest.size: string -> ['string', 'null']",
+  "symbols": [
+   "CreateImageVariationRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateRunRequest/properties/additional_instructions/type",
+  "detail": "Now nullable on CreateRunRequest.additional_instructions: string -> ['string', 'null']",
+  "symbols": [
+   "CreateRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateRunRequest/properties/additional_messages/type",
+  "detail": "Now nullable on CreateRunRequest.additional_messages: array -> ['array', 'null']",
+  "symbols": [
+   "CreateRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateRunRequest/properties/instructions/type",
+  "detail": "Now nullable on CreateRunRequest.instructions: string -> ['string', 'null']",
+  "symbols": [
+   "CreateRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateRunRequest/properties/max_completion_tokens/type",
+  "detail": "Now nullable on CreateRunRequest.max_completion_tokens: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateRunRequest/properties/max_prompt_tokens/type",
+  "detail": "Now nullable on CreateRunRequest.max_prompt_tokens: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateRunRequest/properties/stream/type",
+  "detail": "Now nullable on CreateRunRequest.stream: boolean -> ['boolean', 'null']",
+  "symbols": [
+   "CreateRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateRunRequest/properties/temperature/type",
+  "detail": "Now nullable on CreateRunRequest.temperature: number -> ['number', 'null']",
+  "symbols": [
+   "CreateRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateRunRequest/properties/tools/type",
+  "detail": "Now nullable on CreateRunRequest.tools: array -> ['array', 'null']",
+  "symbols": [
+   "CreateRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateRunRequest/properties/top_p/type",
+  "detail": "Now nullable on CreateRunRequest.top_p: number -> ['number', 'null']",
+  "symbols": [
+   "CreateRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateThreadAndRunRequest/properties/instructions/type",
+  "detail": "Now nullable on CreateThreadAndRunRequest.instructions: string -> ['string', 'null']",
+  "symbols": [
+   "CreateThreadAndRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateThreadAndRunRequest/properties/max_completion_tokens/type",
+  "detail": "Now nullable on CreateThreadAndRunRequest.max_completion_tokens: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateThreadAndRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateThreadAndRunRequest/properties/max_prompt_tokens/type",
+  "detail": "Now nullable on CreateThreadAndRunRequest.max_prompt_tokens: integer -> ['integer', 'null']",
+  "symbols": [
+   "CreateThreadAndRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateThreadAndRunRequest/properties/stream/type",
+  "detail": "Now nullable on CreateThreadAndRunRequest.stream: boolean -> ['boolean', 'null']",
+  "symbols": [
+   "CreateThreadAndRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateThreadAndRunRequest/properties/temperature/type",
+  "detail": "Now nullable on CreateThreadAndRunRequest.temperature: number -> ['number', 'null']",
+  "symbols": [
+   "CreateThreadAndRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateThreadAndRunRequest/properties/tool_resources/type",
+  "detail": "Now nullable on CreateThreadAndRunRequest.tool_resources: object -> ['object', 'null']",
+  "symbols": [
+   "CreateThreadAndRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateThreadAndRunRequest/properties/tools/type",
+  "detail": "Now nullable on CreateThreadAndRunRequest.tools: array -> ['array', 'null']",
+  "symbols": [
+   "CreateThreadAndRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/CreateThreadAndRunRequest/properties/top_p/type",
+  "detail": "Now nullable on CreateThreadAndRunRequest.top_p: number -> ['number', 'null']",
+  "symbols": [
+   "CreateThreadAndRunRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/CreateVoiceRequest/properties/audio_sample",
+  "detail": "Property removed from CreateVoiceRequest: audio_sample",
+  "symbols": [
+   "CreateVoiceRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "prop presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/CreateVoiceRequest/properties/consent",
+  "detail": "Property removed from CreateVoiceRequest: consent",
+  "symbols": [
+   "CreateVoiceRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "prop presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/CreateVoiceRequest/properties/name",
+  "detail": "Property removed from CreateVoiceRequest: name",
+  "symbols": [
+   "CreateVoiceRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "prop presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/EvalRun/properties/model/type",
+  "detail": "Now nullable on EvalRun.model: string -> ['string', 'null']",
+  "symbols": [
+   "EvalRun"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/EvalRun/properties/name/type",
+  "detail": "Now nullable on EvalRun.name: string -> ['string', 'null']",
+  "symbols": [
+   "EvalRun"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/EvalRun/properties/per_model_usage/type",
+  "detail": "Now nullable on EvalRun.per_model_usage: array -> ['array', 'null']",
+  "symbols": [
+   "EvalRun"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/EvalRun/properties/per_testing_criteria_results/type",
+  "detail": "Now nullable on EvalRun.per_testing_criteria_results: array -> ['array', 'null']",
+  "symbols": [
+   "EvalRun"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/FineTuningJob/properties/hyperparameters/type",
+  "detail": "Now nullable on FineTuningJob.hyperparameters: object -> ['object', 'null']",
+  "symbols": [
+   "FineTuningJob"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/FineTuningJob/properties/seed/type",
+  "detail": "Now nullable on FineTuningJob.seed: integer -> ['integer', 'null']",
+  "symbols": [
+   "FineTuningJob"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/FineTuningJobEvent/properties/data/type",
+  "detail": "Now nullable on FineTuningJobEvent.data: object -> ['object', 'null']",
+  "symbols": [
+   "FineTuningJobEvent"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "schema_prop_deprecated",
+  "locator": "/components/schemas/MCPTool/properties/connector_id/deprecated",
+  "detail": "Property deprecated on MCPTool: connector_id",
+  "symbols": [
+   "MCPTool"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "deprecated re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/ModelResponseProperties/properties/user/type",
+  "detail": "Now nullable on ModelResponseProperties.user: string -> ['string', 'null']",
+  "symbols": [
+   "ModelResponseProperties"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/OpenAIFile/properties/bytes/type",
+  "detail": "Now nullable on OpenAIFile.bytes: integer -> ['integer', 'null']",
+  "symbols": [
+   "OpenAIFile"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "schema_prop_deprecated",
+  "locator": "/components/schemas/ProjectCreateRequest/properties/geography/deprecated",
+  "detail": "Property deprecated on ProjectCreateRequest: geography",
+  "symbols": [
+   "ProjectCreateRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "deprecated re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "schema_prop_deprecated",
+  "locator": "/components/schemas/ProjectUpdateRequest/properties/geography/deprecated",
+  "detail": "Property deprecated on ProjectUpdateRequest: geography",
+  "symbols": [
+   "ProjectUpdateRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "deprecated re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RealtimeSessionCreateResponse/properties/turn_detection/type",
+  "detail": "Now nullable on RealtimeSessionCreateResponse.turn_detection: object -> ['object', 'null']",
+  "symbols": [
+   "RealtimeSessionCreateResponse"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RealtimeSessionCreateResponseGA/properties/include/type",
+  "detail": "Now nullable on RealtimeSessionCreateResponseGA.include: array -> ['array', 'null']",
+  "symbols": [
+   "RealtimeSessionCreateResponseGA"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RealtimeTranscriptionSessionCreateResponseGA/properties/include/type",
+  "detail": "Now nullable on RealtimeTranscriptionSessionCreateResponseGA.include: array -> ['array', 'null']",
+  "symbols": [
+   "RealtimeTranscriptionSessionCreateResponseGA"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/ResponseFunctionCallArgumentsDoneEvent/properties/name",
+  "detail": "Property removed from ResponseFunctionCallArgumentsDoneEvent: name",
+  "symbols": [
+   "ResponseFunctionCallArgumentsDoneEvent"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "prop presence re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RunObject/properties/cancelled_at/type",
+  "detail": "Now nullable on RunObject.cancelled_at: integer -> ['integer', 'null']",
+  "symbols": [
+   "RunObject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RunObject/properties/completed_at/type",
+  "detail": "Now nullable on RunObject.completed_at: integer -> ['integer', 'null']",
+  "symbols": [
+   "RunObject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RunObject/properties/expires_at/type",
+  "detail": "Now nullable on RunObject.expires_at: integer -> ['integer', 'null']",
+  "symbols": [
+   "RunObject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RunObject/properties/failed_at/type",
+  "detail": "Now nullable on RunObject.failed_at: integer -> ['integer', 'null']",
+  "symbols": [
+   "RunObject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RunObject/properties/incomplete_details/type",
+  "detail": "Now nullable on RunObject.incomplete_details: object -> ['object', 'null']",
+  "symbols": [
+   "RunObject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RunObject/properties/last_error/type",
+  "detail": "Now nullable on RunObject.last_error: object -> ['object', 'null']",
+  "symbols": [
+   "RunObject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RunObject/properties/max_completion_tokens/type",
+  "detail": "Now nullable on RunObject.max_completion_tokens: integer -> ['integer', 'null']",
+  "symbols": [
+   "RunObject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RunObject/properties/max_prompt_tokens/type",
+  "detail": "Now nullable on RunObject.max_prompt_tokens: integer -> ['integer', 'null']",
+  "symbols": [
+   "RunObject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RunObject/properties/required_action/type",
+  "detail": "Now nullable on RunObject.required_action: object -> ['object', 'null']",
+  "symbols": [
+   "RunObject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RunObject/properties/started_at/type",
+  "detail": "Now nullable on RunObject.started_at: integer -> ['integer', 'null']",
+  "symbols": [
+   "RunObject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RunObject/properties/temperature/type",
+  "detail": "Now nullable on RunObject.temperature: number -> ['number', 'null']",
+  "symbols": [
+   "RunObject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/RunObject/properties/top_p/type",
+  "detail": "Now nullable on RunObject.top_p: number -> ['number', 'null']",
+  "symbols": [
+   "RunObject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "schema_prop_nullable",
+  "locator": "/components/schemas/UpdateVectorStoreRequest/properties/name/type",
+  "detail": "Now nullable on UpdateVectorStoreRequest.name: string -> ['string', 'null']",
+  "symbols": [
+   "UpdateVectorStoreRequest"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "type re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "enum_value_removed",
+  "locator": "/components/schemas/VectorStoreFileBatchObject/properties/object/enum",
+  "detail": "Enum values removed on VectorStoreFileBatchObject.object: ['vector_store.files_batch']",
+  "symbols": [
+   "VectorStoreFileBatchObject"
+  ],
+  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
+  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "verified": true,
+  "warden_reason": "enum re-checked"
+ },
+ {
+  "source_id": "twilio",
+  "file": "spec/json/twilio_messaging_v1.json",
+  "severity": "BREAKING",
+  "kind": "schema_removed",
+  "locator": "/components/schemas/whatsapp_sender_enum_status",
+  "detail": "Schema removed: whatsapp_sender_enum_status",
+  "symbols": [
+   "whatsapp_sender_enum_status"
+  ],
+  "before_commit": "591755b562834daae097da2371e821f349c5f489",
+  "after_commit": "218b7821602a93ae63e83e20ab5e8637e870250f",
+  "verified": true,
+  "warden_reason": "schema presence re-checked"
+ },
+ {
+  "source_id": "twilio",
+  "file": "spec/json/twilio_messaging_v1.json",
+  "severity": "BREAKING",
+  "kind": "schema_removed",
+  "locator": "/components/schemas/whatsapp_template_enum_category",
+  "detail": "Schema removed: whatsapp_template_enum_category",
+  "symbols": [
+   "whatsapp_template_enum_category"
+  ],
+  "before_commit": "591755b562834daae097da2371e821f349c5f489",
+  "after_commit": "218b7821602a93ae63e83e20ab5e8637e870250f",
+  "verified": true,
+  "warden_reason": "schema presence re-checked"
+ },
+ {
+  "source_id": "aws-sdk-js",
+  "file": "CHANGELOG.md",
+  "severity": "DEPRECATION",
+  "kind": "changelog_entry",
+  "locator": "#[3.1151.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1150.0...v3.1151.0) (2026-10-13)",
+  "detail": "New changelog section '[3.1151.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1150.0...v3.1151.0) (2026-10-13)': * **client-route-53-domains:** Route 53 Domains now supports premium domains. This release adds consent objects to operations on premium domains and a new GetDomainPrices API. Also, the Flags and PublicKey fields were deprecated from the DnssecKey response. ([c5cc6f5](https://github.com/aws/aws-sdk-js-v3/commit/c5cc6f506dc764122f7ed68d82cd178c94be068b))",
+  "symbols": [
+   "client-agent-registry-control",
+   "client-appintegrations",
+   "client-appstream",
+   "client-arc-region-switch",
+   "client-connect",
+   "client-datasync",
+   "client-gamelift",
+   "client-glue",
+   "client-lakeformation",
+   "client-omics",
+   "client-resiliencehubv2",
+   "client-route-53-domains"
+  ],
+  "before_commit": "c41e9a98d4227b06099fdc7ea42bcf6fc5a1029f",
+  "after_commit": "3ce8aa778c22193dad5f7fcefe239e3a74a3cd4f",
+  "verified": true,
+  "warden_reason": "quoted lines re-located in section"
+ },
+ {
+  "source_id": "aws-sdk-js",
+  "file": "CHANGELOG.md",
+  "severity": "DEPRECATION",
+  "kind": "changelog_entry",
+  "locator": "#[3.1132.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1131.0...v3.1132.0) (2026-09-14)",
+  "detail": "New changelog section '[3.1132.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1131.0...v3.1132.0) (2026-09-14)': * **client-sts:** Increases the maximum session token size to 4,096 bytes and removes the packed policy size limit. Adds SessionTokenSize and SessionTokenUtilization fields and a new MinimumSessionTokenSize parameter. PackedPolicySize is deprecated. ([906e0db](https://github.com/aws/aws-sdk-js-v3/commit/906e0db85730f7c72e0fceb332540c82a8cfeac1))",
+  "symbols": [
+   "client-billing",
+   "client-billingconductor",
+   "client-codedeploy",
+   "client-glue",
+   "client-imagebuilder",
+   "client-sts",
+   "clients"
+  ],
+  "before_commit": "c41e9a98d4227b06099fdc7ea42bcf6fc5a1029f",
+  "after_commit": "3ce8aa778c22193dad5f7fcefe239e3a74a3cd4f",
+  "verified": true,
+  "warden_reason": "quoted lines re-located in section"
+ },
+ {
+  "source_id": "aws-sdk-js",
+  "file": "CHANGELOG.md",
+  "severity": "BREAKING",
+  "kind": "changelog_entry",
+  "locator": "#[3.1128.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1127.0...v3.1128.0) (2026-09-08)",
+  "detail": "New changelog section '[3.1128.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1127.0...v3.1128.0) (2026-09-08)': * **client-appflow:** Amazon AppFlow now supports key pair (RSA private key) authentication for the Snowflake connector. You can provide a privateKey in SnowflakeConnectorProfileCredentials, and password is no longer required. This is a non-breaking, additive change available via the AWS SDK and CLI. ([ec8753a](https://github.com/aws/aws-sdk-js-v3/commit/ec8753ad6f2305daca3d8679a8438dceaee9b4b9))",
+  "symbols": [
+   "client-appflow",
+   "client-cloudtrail",
+   "client-connect",
+   "client-ec2",
+   "client-mgn",
+   "client-omics",
+   "client-pinpoint-sms-voice-v2",
+   "client-s3",
+   "client-s3-control",
+   "client-sagemaker",
+   "clients",
+   "lib-storage"
+  ],
+  "before_commit": "c41e9a98d4227b06099fdc7ea42bcf6fc5a1029f",
+  "after_commit": "3ce8aa778c22193dad5f7fcefe239e3a74a3cd4f",
+  "verified": true,
+  "warden_reason": "quoted lines re-located in section"
+ },
+ {
+  "source_id": "aws-sdk-js",
+  "file": "CHANGELOG.md",
+  "severity": "BREAKING",
+  "kind": "changelog_entry",
+  "locator": "#[3.1126.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1125.0...v3.1126.0) (2026-09-03)",
+  "detail": "New changelog section '[3.1126.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1125.0...v3.1126.0) (2026-09-03)': * **client-ecs:** Adds a critical parameter to the Amazon ECS managed daemon APIs that controls whether a daemon task failure drains the container instance. Non-critical daemon failures no longer drain the instance or block instance registration. ([2e6a07d](https://github.com/aws/aws-sdk-js-v3/commit/2e6a07d57083a221355891dfb18e9aa129e5987b)) | * **client-eks:** Deprecate EncryptionConfig resources field. Amazon EKS encrypts all Kubernetes API data with envelope encryption by default for clusters running Kubernetes version 1.28 or higher, so this field no longer affects which resources are encrypted. ([c66ca41](https://github.com/aws/aws-sdk-js-v3/commit/c66ca41b9a97108402d0e3bd8e467babc35a7bac))",
+  "symbols": [
+   "client-bedrock-agentcore",
+   "client-bedrock-agentcore-control",
+   "client-connect",
+   "client-drs",
+   "client-ecs",
+   "client-eks",
+   "client-evs",
+   "client-guardduty",
+   "client-socialmessaging",
+   "client-transcribe",
+   "client-transfer",
+   "lib-transfer-manager"
+  ],
+  "before_commit": "c41e9a98d4227b06099fdc7ea42bcf6fc5a1029f",
+  "after_commit": "3ce8aa778c22193dad5f7fcefe239e3a74a3cd4f",
+  "verified": true,
+  "warden_reason": "quoted lines re-located in section"
+ },
+ {
+  "source_id": "aws-sdk-js",
+  "file": "CHANGELOG.md",
+  "severity": "DEPRECATION",
+  "kind": "changelog_entry",
+  "locator": "#[3.1120.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1119.0...v3.1120.0) (2026-08-27)",
+  "detail": "New changelog section '[3.1120.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1119.0...v3.1120.0) (2026-08-27)': * **client-lambda-microvms:** Added InsufficientCapacityException to RunMicrovm for capacity-related failures. Added lifecycle status field (AVAILABLE, DEPRECATED) to ListManagedMicrovmImageVersions. Added ConflictException to CreateMicrovmAuthToken and CreateMicrovmShellAuthToken for unregistered MicroVMs. ([72a8ff8](https://github.com/aws/aws-sdk-js-v3/commit/72a8ff80923f172e73030a0b28d9946fb16d0ffa))",
+  "symbols": [
+   "client-cloudwatch-logs",
+   "client-codedeploy",
+   "client-cognito-identity-provider",
+   "client-datazone",
+   "client-ec2",
+   "client-lambda-microvms",
+   "client-rds"
+  ],
+  "before_commit": "c41e9a98d4227b06099fdc7ea42bcf6fc5a1029f",
+  "after_commit": "3ce8aa778c22193dad5f7fcefe239e3a74a3cd4f",
+  "verified": true,
+  "warden_reason": "quoted lines re-located in section"
+ },
+ {
+  "source_id": "shopify-api-js",
+  "file": "packages/apps/shopify-api/CHANGELOG.md",
+  "severity": "BREAKING",
+  "kind": "changelog_entry",
+  "locator": "#15.0.1",
+  "detail": "New changelog section '15.0.1': - 79671d2: Set the `HttpOnly` flag on cookies by default, including the OAuth state and session cookies, so browser JavaScript can no longer read them. Pass `httpOnly: false` to opt out. Boolean cookie attributes are now written as flags, so `secure=true` is now just `secure`.",
+  "symbols": [
+   "HttpOnly",
+   "secure",
+   "secure=true"
+  ],
+  "before_commit": "e7654fc6ac3b6ef1ec45efe28a84263b59f81ed0",
+  "after_commit": "8868403d534e2995253a16ee5f81ef9b5250fbc8",
+  "verified": true,
+  "warden_reason": "quoted lines re-located in section"
+ },
+ {
+  "source_id": "shopify-api-js",
+  "file": "packages/apps/shopify-api/CHANGELOG.md",
+  "severity": "BREAKING",
+  "kind": "changelog_entry",
+  "locator": "#15.0.0",
+  "detail": "New changelog section '15.0.0': ### Major Changes | Shopify is dropping the `shopify-event-id` and `shopify-resource-id` headers from events deliveries, so the libraries no longer read them. Both fields are gone from the public types, which makes this a breaking change. | // eventId and resourceId are no longer set on events deliveries.",
+  "symbols": [
+   "After",
+   "Before",
+   "X-Shopify-Event-Id",
+   "eventId",
+   "resourceId",
+   "shopify-event-id",
+   "shopify-resource-id",
+   "shopify-webhook-id",
+   "webhookId"
+  ],
+  "before_commit": "e7654fc6ac3b6ef1ec45efe28a84263b59f81ed0",
+  "after_commit": "8868403d534e2995253a16ee5f81ef9b5250fbc8",
+  "verified": true,
+  "warden_reason": "quoted lines re-located in section"
+ },
+ {
+  "source_id": "shopify-api-js",
+  "file": "packages/apps/shopify-api/CHANGELOG.md",
+  "severity": "BREAKING",
+  "kind": "changelog_entry",
+  "locator": "#14.0.1",
+  "detail": "New changelog section '14.0.1': - 8689457: Redact OAuth credentials from HTTP debug logs. The request body of OAuth token endpoint calls is no longer written to the debug log, and credential headers (`Authorization`, `Cookie`, `Set-Cookie`, `X-Shopify-Access-Token`, `Shopify-Storefront-Private-Token`, `X-Shopify-Storefront-Access-Token`) are replaced with `****` in API client debug logs.",
+  "symbols": [
+   "****",
+   "Authorization",
+   "Cookie",
+   "Set-Cookie",
+   "Shopify-Storefront-Private-Token",
+   "X-Shopify-Access-Token",
+   "X-Shopify-Storefront-Access-Token"
+  ],
+  "before_commit": "e7654fc6ac3b6ef1ec45efe28a84263b59f81ed0",
+  "after_commit": "8868403d534e2995253a16ee5f81ef9b5250fbc8",
+  "verified": true,
+  "warden_reason": "quoted lines re-located in section"
+ }
+]

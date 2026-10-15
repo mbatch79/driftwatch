@@ -1,0 +1,36 @@
+name: "Driftwatch Lockfile Scanner"
+description: "Flags verified breaking changes in the APIs your lockfile actually depends on."
+branding: {icon: "alert-triangle", color: "orange"}
+inputs:
+  feed_url:
+    description: "URL of the latest Driftwatch findings.json (free public feed)"
+    required: false
+    default: "https://raw.githubusercontent.com/re-batch/driftwatch-feed/main/latest/findings.json"
+  fail_on:
+    description: "Fail the job if any finding scores at or above this (0 = never fail)"
+    required: false
+    default: "100"
+runs:
+  using: "composite"
+  steps:
+    - shell: bash
+      run: |
+        set -e
+        pip install -q pyyaml
+        curl -sSL "${{ inputs.feed_url }}" -o /tmp/dw-findings.json
+        git clone -q --depth 1 https://github.com/re-batch/driftwatch.git /tmp/driftwatch
+        python -m driftwatch scan "$GITHUB_WORKSPACE" /tmp/dw-findings.json > /tmp/dw-out.json
+        python - <<'EOF' >> "$GITHUB_STEP_SUMMARY"
+        import json; d=json.load(open('/tmp/dw-out.json'))
+        print("## Driftwatch — breaking changes touching this repo\n")
+        print(f"Vendors in use: {', '.join(d['vendors_in_use']) or 'none detected'}\n")
+        if not d['findings']: print("No verified breaking changes touch your dependencies this cycle. ✅")
+        for f in d['findings']:
+            print(f"- **{f['score']}** · {f['severity']} · {f['detail']}" + (f"  \n  used at: `{'`, `'.join(f['usage'][:3])}`" if f['usage'] else ""))
+        print("\n_Dependency-aware alerts, Slack delivery and private repos: driftwatch.dev/dev_")
+        EOF
+        python - <<'EOF'
+        import json,sys; d=json.load(open('/tmp/dw-out.json')); th=int("${{ inputs.fail_on }}")
+        sys.exit(1 if th and any(f['score']>=th for f in d['findings']) else 0)
+        EOF
+      env: {PYTHONPATH: /tmp/driftwatch}

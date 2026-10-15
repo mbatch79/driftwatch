@@ -1,0 +1,37 @@
+# VAULT — hard-coded treasury rules. No agent may edit this file at runtime.
+# Changes require a human commit. VAULT refuses to run if the file's hash
+# doesn't match the one recorded in ledger/vault.lock.
+
+currency: USD
+revenue:
+  trailing_window_days: 30
+  # Seed allowance used ONLY while trailing revenue < seed_floor.
+  # Lets the swarm run its first cycles before revenue exists.
+  seed_floor: 500.00
+  seed_compute_allowance_per_cycle: 25.00
+
+compute:
+  frontier_cap_pct_of_trailing_revenue: 15   # MARROW + WARDEN escalations
+  total_cap_pct_of_trailing_revenue: 25      # degrade trigger
+  hibernate_cap_pct_of_trailing_revenue: 40  # hibernate trigger
+  degrade_after_consecutive_days: 3
+  single_cycle_hard_cap_usd: 200.00          # kill + blacklist if exceeded w/ no booked revenue
+  # Model price table (USD per 1M tokens). Update by human commit only.
+  prices:
+    cheap:    {input: 0.80,  output: 4.00}
+    mid:      {input: 3.00,  output: 15.00}
+    frontier: {input: 15.00, output: 75.00}
+
+quality:
+  warden_fail_rate_pause_pct: 10   # pause ALL delivery above this
+
+treasury:
+  runway_floor_days: 90
+
+revenue_shock:
+  hibernate_if_wow_drop_pct: 30
+
+decisions:
+  autonomous_reversible_max_usd: 50
+  dual_marrow_required_above_usd: 500
+  default_on_disagreement: "do_not_spend_do_not_ship"
