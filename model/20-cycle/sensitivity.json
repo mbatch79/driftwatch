@@ -1,0 +1,58 @@
+[
+ {
+  "assumption": "flag_rate",
+  "base": 0.35,
+  "mrr_at_minus40": 3181.0,
+  "mrr_base": 8015.0,
+  "mrr_at_plus40": 10808.0,
+  "swing": 7627.0
+ },
+ {
+  "assumption": "flagged_to_dev",
+  "base": 0.12,
+  "mrr_at_minus40": 3829.0,
+  "mrr_base": 8015.0,
+  "mrr_at_plus40": 9155.0,
+  "swing": 5326.0
+ },
+ {
+  "assumption": "dev_to_ops_weekly",
+  "base": 0.02,
+  "mrr_at_minus40": 6764.0,
+  "mrr_base": 8015.0,
+  "mrr_at_plus40": 8767.0,
+  "swing": 2003.0
+ },
+ {
+  "assumption": "content_bump_installs",
+  "base": 45,
+  "mrr_at_minus40": 9162.0,
+  "mrr_base": 8015.0,
+  "mrr_at_plus40": 8015.0,
+  "swing": -1147.0
+ },
+ {
+  "assumption": "steady_installs",
+  "base": 18,
+  "mrr_at_minus40": 7419.0,
+  "mrr_base": 8015.0,
+  "mrr_at_plus40": 8462.0,
+  "swing": 1043.0
+ },
+ {
+  "assumption": "dev_churn_monthly",
+  "base": 0.06,
+  "mrr_at_minus40": 7166.0,
+  "mrr_base": 8015.0,
+  "mrr_at_plus40": 8067.0,
+  "swing": 901.0
+ },
+ {
+  "assumption": "launch_installs",
+  "base": 120,
+  "mrr_at_minus40": 7516.0,
+  "mrr_base": 8015.0,
+  "mrr_at_plus40": 6719.0,
+  "swing": -797.0
+ }
+]

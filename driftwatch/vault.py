@@ -47,13 +47,18 @@ def cycle_budget() -> dict:
     cfg = _cfg()
     rev = trailing_revenue()
     seed = rev < cfg["revenue"]["seed_floor"]
+    # Weekly cycle: trailing-30-day caps scaled to a 7-day cycle. The seed allowance is a
+    # FLOOR while revenue is below seed_floor (so the swarm can run before customers exist),
+    # never a ceiling on top of real revenue — audit of the 20-cycle model showed a week with
+    # 11 new seats booked tripping DEGRADE purely on onboarding compute. (Cycle 2 fix.)
+    rev_total = rev * cfg["compute"]["total_cap_pct_of_trailing_revenue"] / 100 * 7 / 30
+    rev_frontier = rev * cfg["compute"]["frontier_cap_pct_of_trailing_revenue"] / 100 * 7 / 30
     if seed:
-        total = cfg["revenue"]["seed_compute_allowance_per_cycle"]
-        frontier = total * (cfg["compute"]["frontier_cap_pct_of_trailing_revenue"] / cfg["compute"]["total_cap_pct_of_trailing_revenue"])
+        seed_total = cfg["revenue"]["seed_compute_allowance_per_cycle"]
+        total = max(seed_total, rev_total)
+        frontier = max(seed_total * (cfg["compute"]["frontier_cap_pct_of_trailing_revenue"] / cfg["compute"]["total_cap_pct_of_trailing_revenue"]), rev_frontier)
     else:
-        # weekly cycle: trailing-30-day caps scaled to a 7-day cycle
-        total = rev * cfg["compute"]["total_cap_pct_of_trailing_revenue"] / 100 * 7 / 30
-        frontier = rev * cfg["compute"]["frontier_cap_pct_of_trailing_revenue"] / 100 * 7 / 30
+        total, frontier = rev_total, rev_frontier
     total = min(total, cfg["compute"]["single_cycle_hard_cap_usd"])
     return {"trailing_revenue_usd": round(rev, 2), "seed_mode": seed,
             "cycle_total_cap_usd": round(total, 2), "cycle_frontier_cap_usd": round(frontier, 2)}
@@ -71,19 +76,30 @@ def record(cycle: int, entry: dict):
         fh.write(json.dumps(entry) + "\n")
 
 
+def trailing_compute() -> float:
+    f = LEDGER / "compute.jsonl"
+    if not f.exists():
+        return 0.0
+    cutoff = datetime.now(timezone.utc).timestamp() - _cfg()["revenue"]["trailing_window_days"] * 86400
+    return sum(r["usd"] for r in map(json.loads, f.read_text().splitlines())
+               if datetime.fromisoformat(r["ts"]).timestamp() >= cutoff)
+
+
 def mode(cycle_spend: float, warden_fail_pct: float) -> str:
+    """Burn is judged on the trailing window, not one cycle, so a lumpy onboarding week
+    doesn't trip DEGRADE while the seats it onboarded are paying. The single-cycle hard
+    cap still kills a runaway cycle outright."""
     cfg = _cfg()
     b = cycle_budget()
     if warden_fail_pct > cfg["quality"]["warden_fail_rate_pause_pct"]:
         return "PAUSED_DELIVERY"
     if cycle_spend > cfg["compute"]["single_cycle_hard_cap_usd"]:
         return "KILLED"
-    if not b["seed_mode"]:
-        rev = b["trailing_revenue_usd"]
-        if cycle_spend > rev * cfg["compute"]["hibernate_cap_pct_of_trailing_revenue"] / 100 * 7 / 30:
-            return "HIBERNATE"
-        if cycle_spend > b["cycle_total_cap_usd"]:
-            return "DEGRADE"
-    elif cycle_spend > b["cycle_total_cap_usd"]:
+    rev = b["trailing_revenue_usd"]
+    burn = trailing_compute()  # includes this cycle once recorded
+    floor = cfg["revenue"]["seed_compute_allowance_per_cycle"] * 4 if b["seed_mode"] else 0.0
+    if burn > max(floor, rev * cfg["compute"]["hibernate_cap_pct_of_trailing_revenue"] / 100):
+        return "HIBERNATE"
+    if burn > max(floor, rev * cfg["compute"]["total_cap_pct_of_trailing_revenue"] / 100):
         return "DEGRADE"
     return "NORMAL"

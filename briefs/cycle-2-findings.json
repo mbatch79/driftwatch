@@ -1,0 +1,47 @@
+[
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "schema_prop_deprecated",
+  "locator": "/components/schemas/CreateImageEditRequest/properties/user/deprecated",
+  "detail": "Property deprecated on CreateImageEditRequest: user",
+  "symbols": [
+   "CreateImageEditRequest"
+  ],
+  "before_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "after_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+  "verified": true,
+  "warden_reason": "deprecated re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "schema_prop_deprecated",
+  "locator": "/components/schemas/CreateImageRequest/properties/user/deprecated",
+  "detail": "Property deprecated on CreateImageRequest: user",
+  "symbols": [
+   "CreateImageRequest"
+  ],
+  "before_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "after_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+  "verified": true,
+  "warden_reason": "deprecated re-checked"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "schema_prop_deprecated",
+  "locator": "/components/schemas/EditImageBodyJsonParam/properties/user/deprecated",
+  "detail": "Property deprecated on EditImageBodyJsonParam: user",
+  "symbols": [
+   "EditImageBodyJsonParam"
+  ],
+  "before_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "after_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+  "verified": true,
+  "warden_reason": "deprecated re-checked"
+ }
+]

@@ -28,9 +28,10 @@ def run_cycle(window_days: int = 60) -> int:
     budget = vault.cycle_budget()
     print(f"[MARROW] cycle {cycle} · budget {budget}")
 
-    pairs = scout.ingest(window_days)
+    pairs = scout.ingest(window_days, incremental=True)
     kinds = {s["id"]: s["diff_kind"] for s in scout.load_sources()}
-    print(f"[SCOUT] {len(pairs)} file pairs snapshotted")
+    n_inc = sum(1 for b, _ in pairs if f"{b.source_id}:{b.path}" in scout.watermarks())
+    print(f"[SCOUT] {len(pairs)} file pairs snapshotted ({n_inc} incremental from watermark, {len(pairs)-n_inc} from {window_days}-day window)")
 
     findings = diff.run(pairs, kinds)
     print(f"[DIFF] {len(findings)} candidate findings")
@@ -57,6 +58,21 @@ def run_cycle(window_days: int = 60) -> int:
         text = "> DELIVERY PAUSED BY VAULT: WARDEN fail-rate over threshold. Brief retained, not shipped.\n\n" + text
     (OUT / f"cycle-{cycle}.md").write_text(text)
     print(f"[QUILL] wrote briefs/cycle-{cycle}.md")
+
+    if mode != "PAUSED_DELIVERY":
+        # Public feed the GitHub Action reads: cumulative verified findings, newest cycle first.
+        feed = ROOT / "feed" / "latest"
+        feed.mkdir(parents=True, exist_ok=True)
+        prev = json.loads((feed / "findings.json").read_text()) if (feed / "findings.json").exists() else []
+        fresh = [{**v.finding.to_dict(), "verified": True, "cycle": cycle} for v in verdicts if v.verified]
+        seen = {(f["source_id"], f["locator"], f["kind"]) for f in fresh}
+        keep = [f for f in prev if (f["source_id"], f["locator"], f["kind"]) not in seen and f.get("cycle", 0) > cycle - 9]
+        (feed / "findings.json").write_text(json.dumps(fresh + keep, indent=1))
+        (feed / "brief.md").write_text(text)
+        scout.save_watermarks(pairs)
+        print(f"[MARROW] feed published ({len(fresh)} new, {len(keep)} carried) · watermarks advanced")
+    else:
+        print("[MARROW] delivery paused — feed and watermarks NOT advanced; next cycle re-diffs the same range")
     return cycle
 
 

@@ -1,0 +1,222 @@
+[
+ {
+  "week": 1,
+  "trailing_rev": 0.0,
+  "seed_mode": true,
+  "cycle_cap": 25.0,
+  "compute": 0.0,
+  "trailing_burn": 0.0,
+  "burn_pct_of_trailing": null,
+  "mode": "NORMAL",
+  "margin": -28.0
+ },
+ {
+  "week": 2,
+  "trailing_rev": 0.0,
+  "seed_mode": true,
+  "cycle_cap": 25.0,
+  "compute": 0.0,
+  "trailing_burn": 0.0,
+  "burn_pct_of_trailing": null,
+  "mode": "NORMAL",
+  "margin": -28.0
+ },
+ {
+  "week": 3,
+  "trailing_rev": 366.78,
+  "seed_mode": true,
+  "cycle_cap": 25.0,
+  "compute": 37.4,
+  "trailing_burn": 37.4,
+  "burn_pct_of_trailing": 10.2,
+  "mode": "NORMAL",
+  "margin": 301.38
+ },
+ {
+  "week": 4,
+  "trailing_rev": 800.25,
+  "seed_mode": false,
+  "cycle_cap": 46.68,
+  "compute": 16.7,
+  "trailing_burn": 54.1,
+  "burn_pct_of_trailing": 6.8,
+  "mode": "NORMAL",
+  "margin": 388.77
+ },
+ {
+  "week": 5,
+  "trailing_rev": 1267.06,
+  "seed_mode": false,
+  "cycle_cap": 73.91,
+  "compute": 17.6,
+  "trailing_burn": 71.7,
+  "burn_pct_of_trailing": 5.7,
+  "mode": "NORMAL",
+  "margin": 421.21
+ },
+ {
+  "week": 6,
+  "trailing_rev": 1933.94,
+  "seed_mode": false,
+  "cycle_cap": 112.81,
+  "compute": 33.0,
+  "trailing_burn": 104.7,
+  "burn_pct_of_trailing": 5.4,
+  "mode": "NORMAL",
+  "margin": 605.88
+ },
+ {
+  "week": 7,
+  "trailing_rev": 2200.69,
+  "seed_mode": false,
+  "cycle_cap": 128.37,
+  "compute": 17.1,
+  "trailing_burn": 84.4,
+  "burn_pct_of_trailing": 3.8,
+  "mode": "NORMAL",
+  "margin": 588.43
+ },
+ {
+  "week": 8,
+  "trailing_rev": 2479.24,
+  "seed_mode": false,
+  "cycle_cap": 144.62,
+  "compute": 25.2,
+  "trailing_burn": 92.9,
+  "burn_pct_of_trailing": 3.7,
+  "mode": "NORMAL",
+  "margin": 658.82
+ },
+ {
+  "week": 9,
+  "trailing_rev": 2791.14,
+  "seed_mode": false,
+  "cycle_cap": 162.82,
+  "compute": 29.5,
+  "trailing_burn": 104.8,
+  "burn_pct_of_trailing": 3.8,
+  "mode": "NORMAL",
+  "margin": 721.21
+ },
+ {
+  "week": 10,
+  "trailing_rev": 3193.32,
+  "seed_mode": false,
+  "cycle_cap": 186.28,
+  "compute": 56.8,
+  "trailing_burn": 128.6,
+  "burn_pct_of_trailing": 4.0,
+  "mode": "NORMAL",
+  "margin": 984.26
+ },
+ {
+  "week": 11,
+  "trailing_rev": 3662.19,
+  "seed_mode": false,
+  "cycle_cap": 200.0,
+  "compute": 42.7,
+  "trailing_burn": 154.2,
+  "burn_pct_of_trailing": 4.2,
+  "mode": "NORMAL",
+  "margin": 1031.7
+ },
+ {
+  "week": 12,
+  "trailing_rev": 4085.92,
+  "seed_mode": false,
+  "cycle_cap": 200.0,
+  "compute": 43.6,
+  "trailing_burn": 172.6,
+  "burn_pct_of_trailing": 4.2,
+  "mode": "NORMAL",
+  "margin": 1064.15
+ },
+ {
+  "week": 13,
+  "trailing_rev": 4554.79,
+  "seed_mode": false,
+  "cycle_cap": 200.0,
+  "compute": 52.6,
+  "trailing_burn": 195.7,
+  "burn_pct_of_trailing": 4.3,
+  "mode": "NORMAL",
+  "margin": 1166.98
+ },
+ {
+  "week": 14,
+  "trailing_rev": 4866.68,
+  "seed_mode": false,
+  "cycle_cap": 200.0,
+  "compute": 63.7,
+  "trailing_burn": 202.6,
+  "burn_pct_of_trailing": 4.2,
+  "mode": "NORMAL",
+  "margin": 1289.25
+ },
+ {
+  "week": 15,
+  "trailing_rev": 5223.72,
+  "seed_mode": false,
+  "cycle_cap": 200.0,
+  "compute": 59.3,
+  "trailing_burn": 219.2,
+  "burn_pct_of_trailing": 4.2,
+  "mode": "NORMAL",
+  "margin": 1372.14
+ },
+ {
+  "week": 16,
+  "trailing_rev": 5580.75,
+  "seed_mode": false,
+  "cycle_cap": 200.0,
+  "compute": 60.2,
+  "trailing_burn": 235.8,
+  "burn_pct_of_trailing": 4.2,
+  "mode": "NORMAL",
+  "margin": 1404.58
+ },
+ {
+  "week": 17,
+  "trailing_rev": 5792.61,
+  "seed_mode": false,
+  "cycle_cap": 200.0,
+  "compute": 56.8,
+  "trailing_burn": 240.0,
+  "burn_pct_of_trailing": 4.1,
+  "mode": "NORMAL",
+  "margin": 1374.64
+ },
+ {
+  "week": 18,
+  "trailing_rev": 6016.28,
+  "seed_mode": false,
+  "cycle_cap": 200.0,
+  "compute": 71.7,
+  "trailing_burn": 248.0,
+  "burn_pct_of_trailing": 4.1,
+  "mode": "NORMAL",
+  "margin": 1504.92
+ },
+ {
+  "week": 19,
+  "trailing_rev": 6239.94,
+  "seed_mode": false,
+  "cycle_cap": 200.0,
+  "compute": 74.8,
+  "trailing_burn": 263.5,
+  "burn_pct_of_trailing": 4.2,
+  "mode": "NORMAL",
+  "margin": 1580.3
+ },
+ {
+  "week": 20,
+  "trailing_rev": 6542.09,
+  "seed_mode": false,
+  "cycle_cap": 200.0,
+  "compute": 81.3,
+  "trailing_burn": 284.6,
+  "burn_pct_of_trailing": 4.4,
+  "mode": "NORMAL",
+  "margin": 1685.63
+ }
+]

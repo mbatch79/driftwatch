@@ -69,9 +69,16 @@ def canonical_hash(raw: bytes, path: str) -> str:
     return hashlib.sha256(canon).hexdigest()
 
 
-def snapshot(src: dict, path: str, when: datetime, label: str) -> Snapshot:
+STATE = ROOT / "ledger" / "watermarks.json"
+
+
+def snapshot(src: dict, path: str, label: str, when: datetime | None = None, sha: str | None = None) -> Snapshot:
+    """Snapshot by date (first cycle) or by exact commit (high-water mark from the last cycle)."""
     repo = mirror(src)
-    sha, date = commit_at(repo, src["branch"], when, path)
+    if sha is None:
+        sha, date = commit_at(repo, src["branch"], when, path)
+    else:
+        date = _run(["git", "log", "-1", "--format=%cI", sha], cwd=repo)
     raw = subprocess.run(["git", "show", f"{sha}:{path}"], cwd=repo, check=True,
                          capture_output=True).stdout
     out = SNAPS / src["id"] / label / Path(path).name
@@ -80,15 +87,32 @@ def snapshot(src: dict, path: str, when: datetime, label: str) -> Snapshot:
     return Snapshot(src["id"], path, sha, date, out, canonical_hash(raw, path))
 
 
-def ingest(window_days: int = 60) -> list[tuple[Snapshot, Snapshot]]:
+def watermarks() -> dict[str, str]:
+    return json.loads(STATE.read_text()) if STATE.exists() else {}
+
+
+def save_watermarks(pairs: list[tuple[Snapshot, Snapshot]]):
+    STATE.parent.mkdir(exist_ok=True)
+    wm = watermarks()
+    for _, a in pairs:
+        wm[f"{a.source_id}:{a.path}"] = a.commit
+    STATE.write_text(json.dumps(wm, indent=1, sort_keys=True))
+
+
+def ingest(window_days: int = 60, incremental: bool = True) -> list[tuple[Snapshot, Snapshot]]:
+    """Incremental: 'before' is the last cycle's 'after' commit for that file (nothing is
+    reported twice, nothing is skipped). Falls back to the date window for any file
+    with no watermark yet (first cycle, or a newly added source)."""
     now = datetime.now(timezone.utc)
     then = now - timedelta(days=window_days)
+    wm = watermarks() if incremental else {}
     pairs = []
     for src in load_sources():
         if src.get("tier") != "clean":
             continue  # walled sources are not in Cycle 1
         for path in src["paths"]:
-            before = snapshot(src, path, then, "before")
-            after = snapshot(src, path, now, "after")
+            mark = wm.get(f"{src['id']}:{path}")
+            before = snapshot(src, path, "before", sha=mark) if mark else snapshot(src, path, "before", when=then)
+            after = snapshot(src, path, "after", when=now)
             pairs.append((before, after))
     return pairs

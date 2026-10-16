@@ -1,0 +1,23 @@
+{
+ "launch_installs": 120,
+ "steady_installs": 18,
+ "decay_weeks": 4,
+ "content_bump_every": 4,
+ "content_bump_installs": 45,
+ "flag_rate": 0.35,
+ "flagged_to_dev": 0.12,
+ "unflagged_to_dev": 0.01,
+ "conv_lag_weeks": 2,
+ "dev_to_ops_weekly": 0.02,
+ "dev_churn_monthly": 0.06,
+ "ops_churn_monthly": 0.03,
+ "dev_price": 149.0,
+ "ops_price": 499.0,
+ "stripe_fee_pct": 0.029,
+ "stripe_fee_fixed": 0.3,
+ "dev_compute_weekly": 0.9,
+ "ops_compute_weekly": 6.5,
+ "onboarding_compute": 2.5,
+ "fixed_infra_weekly": 28.0,
+ "seed": 7
+}
