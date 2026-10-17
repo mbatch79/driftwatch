@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Driftwatch</title>
+<meta name="description" content="Driftwatch watches the API specs you depend on, verifies every breaking change against source, and tells you only when it touches code you actually use.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1b1f2a; --muted:#5b6270; --rule:#e4e7ec; --paper:#ffffff; --wash:#f6f7f9;
+    --del:#b42318; --del-bg:#fef3f2; --add:#067647; --add-bg:#ecfdf3;
+    --sans:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  html{font-size:17px}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px}
+  header{padding:28px 0 0}
+  header .wrap{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+  .brand{font-weight:600;letter-spacing:-.01em;text-decoration:none}
+  nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:.94rem}
+  nav a:hover{color:var(--ink);text-decoration:underline}
+  h1{font-size:clamp(1.9rem,4.6vw,2.6rem);line-height:1.12;letter-spacing:-.02em;font-weight:600;margin:72px 0 18px;max-width:17ch}
+  .lede{font-size:1.12rem;color:var(--muted);margin:0 0 40px;max-width:52ch}
+  h2{font-size:1.25rem;font-weight:600;letter-spacing:-.01em;margin:64px 0 14px}
+  p{margin:0 0 16px;max-width:62ch}
+  .brief{border:1px solid var(--rule);border-radius:6px;overflow:hidden;font-family:var(--mono);font-size:.84rem;line-height:1.5;margin:0 0 14px}
+  .brief-head{padding:10px 14px;background:var(--wash);border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted)}
+  .brief-head strong{color:var(--ink);font-weight:500}
+  .brief-body{padding:12px 0;overflow-x:auto}
+  .ln{display:flex;padding:0 14px;white-space:pre}
+  .ln.del{background:var(--del-bg);color:var(--del)}
+  .ln.add{background:var(--add-bg);color:var(--add)}
+  .ln .g{width:1.4em;flex:none;opacity:.7}
+  .ln.ctx{color:var(--muted)}
+  .brief-foot{padding:12px 14px;border-top:1px solid var(--rule);color:var(--ink);background:var(--wash)}
+  .brief-foot b{font-weight:500}
+  .cap{font-size:.9rem;color:var(--muted);margin:0 0 0}
+  ol.loop{padding-left:1.3em;margin:0 0 8px}
+  ol.loop li{margin:0 0 10px;max-width:60ch}
+  ol.loop li b{font-weight:600}
+  table{width:100%;border-collapse:collapse;margin:8px 0 10px;font-size:.98rem}
+  th,td{text-align:left;padding:12px 10px 12px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+  th{font-weight:600;color:var(--ink)}
+  td.price{white-space:nowrap;font-variant-numeric:tabular-nums}
+  .btn{display:inline-block;padding:9px 14px;border:1px solid var(--ink);border-radius:5px;text-decoration:none;font-weight:500;font-size:.94rem;background:var(--ink);color:#fff}
+  .btn.ghost{background:transparent;color:var(--ink)}
+  .btn:focus-visible,a:focus-visible{outline:2px solid var(--add);outline-offset:2px}
+  pre{background:var(--wash);border:1px solid var(--rule);border-radius:6px;padding:14px;font-family:var(--mono);font-size:.82rem;line-height:1.5;overflow-x:auto;margin:0 0 12px}
+  .note{font-size:.92rem;color:var(--muted)}
+  footer{margin:88px 0 40px;padding-top:20px;border-top:1px solid var(--rule);font-size:.9rem;color:var(--muted)}
+  footer p{margin:0 0 6px}
+  @media (max-width:520px){ html{font-size:16px} h1{margin-top:48px} th:nth-child(3),td:nth-child(3){display:none} }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="/driftwatch/">Driftwatch</a>
+  <nav><a href="#how">How it works</a><a href="#pricing">Pricing</a><a href="https://github.com/mbatch79/driftwatch">Source</a></nav>
+</div></header>
+
+<main class="wrap">
+  <h1>The APIs you build on change without telling you. We read the diff.</h1>
+  <p class="lede">Driftwatch watches the machine-readable specs of Stripe, OpenAI, Shopify, Twilio and AWS, verifies every breaking change against the source, and alerts you only when it touches code you actually use.</p>
+
+  <div class="brief" aria-label="Example brief">
+    <div class="brief-head"><span><strong>openai</strong> openapi.json</span><span>5bdf71b6 → d156763a · 17 Oct 2026</span></div>
+    <div class="brief-body">
+<div class="ln ctx"><span class="g"> </span>CreateAgentSessionParams:</div>
+<div class="ln ctx"><span class="g"> </span>  properties:</div>
+<div class="ln del"><span class="g">-</span>    spend_control: SessionSpendControlParam</div>
+<div class="ln ctx"><span class="g"> </span>    tools: …</div>
+<div class="ln ctx"><span class="g"> </span></div>
+<div class="ln ctx"><span class="g"> </span>components.schemas:</div>
+<div class="ln del"><span class="g">-</span>  SessionSpendControlParam</div>
+<div class="ln del"><span class="g">-</span>  SessionSpendControlResource</div>
+    </div>
+    <div class="brief-foot"><b>Breaking.</b> <code>spend_control</code> removed from create, update and session resource. Used in your repo at <code>src/agents.ts:42</code>. Remove before your next deploy.</div>
+  </div>
+  <p class="cap">A real finding from this week, caught within hours of the commit and re-verified against the raw spec. The repo line is what a Dev-plan brief adds; the example file is illustrative.</p>
+
+  <h2 id="how">How it works</h2>
+  <p>Once a week, and on demand, an unattended pipeline runs on GitHub's infrastructure. It has no opinions and no large-language-model in the critical path, so it cannot invent a change that didn't happen.</p>
+  <ol class="loop">
+    <li><b>Fetch.</b> Each vendor's OpenAPI spec or changelog is pulled from its own repository and compared to the exact commit we checked last time. Nothing is reported twice; nothing is skipped.</li>
+    <li><b>Diff.</b> Structural comparison: endpoints, parameters, request and response fields, schema types, enums, deprecation flags. Cosmetic edits never leave this step.</li>
+    <li><b>Verify.</b> A second, independent check re-locates every finding in the raw source from its locator alone. Anything it can't reproduce is discarded, not softened.</li>
+    <li><b>Match.</b> On paid plans we hold your lockfile and source. A change is urgent because line 42 calls it, not because a model guessed.</li>
+    <li><b>Deliver.</b> Urgent findings push to Slack or email; the rest arrive in a weekly brief. Every line carries the commit range and a locator you can check yourself.</li>
+  </ol>
+  <p class="note">Four cycles so far: 229 verified findings, 30 of them breaking, 0 rejected on verification. <a href="https://github.com/mbatch79/driftwatch/tree/main/briefs">Read the briefs.</a></p>
+
+  <h2 id="free">Start free, in your CI</h2>
+  <p>The free GitHub Action reads your lockfile on every build and flags any verified breaking change that touches a package you depend on. No account, no key.</p>
+<pre><code># .github/workflows/driftwatch.yml
+on: [push, pull_request]
+jobs:
+  driftwatch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mbatch79/driftwatch/action@main</code></pre>
+  <p class="note">The job summary lists what was found and where. Nothing is sent anywhere; the feed it checks against is <a href="https://raw.githubusercontent.com/mbatch79/driftwatch/main/feed/latest/findings.json">public JSON</a>.</p>
+
+  <h2 id="pricing">Pricing</h2>
+  <table>
+    <thead><tr><th>Plan</th><th>Price</th><th>What you get</th><th></th></tr></thead>
+    <tbody>
+      <tr><td><b>Action</b></td><td class="price">Free</td><td>Public feed, lockfile check on every build, job summary.</td><td><a class="btn ghost" href="#free">Add to CI</a></td></tr>
+      <tr><td><b>Dev</b></td><td class="price">A$229 / month</td><td>Your repo matched line-by-line. Up to 100 sources. Slack and email alerts. Weekly brief.</td><td><a class="btn" href="https://buy.stripe.com/28E28q2GZ2J8eSs1Oh6AM00">Subscribe</a></td></tr>
+      <tr><td><b>Ops</b></td><td class="price">A$749 / month</td><td>Everything in Dev. Up to 300 sources including docs behind bot walls. Compliance questionnaire. Audit log.</td><td><a class="btn" href="https://buy.stripe.com/eVq5kCdlDerQ25GfF76AM01">Subscribe</a></td></tr>
+    </tbody>
+  </table>
+  <p class="note">Billed monthly in Australian dollars through Stripe, which handles tax for your country. Cancel any time from the receipt email. After you subscribe, reply to the receipt with your repository URL (read-only access is enough) and your first brief lands within one cycle.</p>
+
+  <h2 id="agents">For agents</h2>
+  <p>If you're a coding agent or a CI bot: the feed at <a href="https://raw.githubusercontent.com/mbatch79/driftwatch/main/feed/latest/findings.json">/feed/latest/findings.json</a> is the product. Each entry has a vendor, severity, machine-checkable locator, the symbols it affects and the commit range. <a href="/driftwatch/llms.txt">llms.txt</a> describes the format.</p>
+</main>
+
+<footer class="wrap">
+  <p>Driftwatch is operated by Re-Batch, Sale, Victoria. The pipeline, every brief and the full ledger are public at <a href="https://github.com/mbatch79/driftwatch">github.com/mbatch79/driftwatch</a>.</p>
+  <p>Findings describe the newest published version of each vendor's spec. Check the locator against the version you're pinned to before acting.</p>
+</footer>
+</body>
+</html>

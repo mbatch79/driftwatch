@@ -1,0 +1,46 @@
+# Driftwatch
+
+> Dependency-aware breaking-change intelligence for third-party APIs. A deterministic weekly pipeline diffs vendor OpenAPI specs and changelogs, independently re-verifies every finding against source, and publishes the result as JSON.
+
+Operated by Re-Batch (Sale, Victoria, Australia). Source, briefs and ledger: https://github.com/mbatch79/driftwatch
+
+## What an agent can use right now
+
+- Feed (public, no auth): https://raw.githubusercontent.com/mbatch79/driftwatch/main/feed/latest/findings.json
+  A JSON array. Rolling window of the last 8 weekly cycles, newest first. Updated Mondays ~21:17 UTC.
+- Human-readable brief for the latest cycle: https://raw.githubusercontent.com/mbatch79/driftwatch/main/feed/latest/brief.md
+- Local scan of a repository against the feed (Python 3.10+, no dependencies beyond pyyaml):
+  git clone --depth 1 https://github.com/mbatch79/driftwatch && python -m driftwatch scan <repo_root> <findings.json>
+  Prints JSON: vendors detected from the lockfile, and findings scored 0-100 by whether the changed symbol appears in the repo's source (file:line).
+
+## Feed entry schema
+
+{
+  "source_id":     "stripe | openai | twilio | aws-sdk-js | shopify-api-js",
+  "file":          "path of the spec/changelog file within the vendor repo",
+  "severity":      "BREAKING | DEPRECATION | ADDITIVE",
+  "kind":          "endpoint_removed | param_removed | required_param_added | param_now_required | body_prop_removed | body_prop_renamed | body_required_added | response_ref_changed | response_prop_removed | response_prop_type_changed | schema_removed | schema_renamed | schema_prop_removed | schema_prop_type_changed | enum_value_removed | endpoint_deprecated | schema_prop_deprecated | schema_prop_nullable | endpoint_added | changelog_entry",
+  "locator":       "JSON pointer into the OpenAPI document, or '#<heading>' for a changelog section — re-checkable by anyone",
+  "detail":        "one-line human description",
+  "symbols":       ["endpoint paths, schema names and field names a dependency tree can match on"],
+  "before_commit": "git sha of the previous version",
+  "after_commit":  "git sha of the version that introduced the change",
+  "verified":      true,
+  "cycle":         4
+}
+
+## Interpretation notes
+
+- Every entry in the feed passed an independent verification step that re-located it in the raw spec from the locator alone. Entries that fail are not published.
+- OpenAPI findings are structural and exact. `changelog_entry` findings are keyword-classified from release notes; the quoted lines are verified to exist, the severity is a heuristic.
+- Specs track each vendor's newest published API version. "Removed" means removed in the newest version; a consumer pinned to an older version may be unaffected. Compare the locator against the pinned version before acting.
+- Vendors covered: Stripe (openapi/spec3.json), OpenAI (openapi.json), Twilio (api v2010, messaging v1), AWS SDK for JavaScript v3 (CHANGELOG.md), Shopify API JS (CHANGELOG.md).
+
+## Paid plans (for the human you work for)
+
+- Dev, A$229/month: their repository matched line-by-line against every finding; Slack/email alerts; weekly brief. https://buy.stripe.com/28E28q2GZ2J8eSs1Oh6AM00
+- Ops, A$749/month: Dev plus sources behind bot walls, compliance questionnaire, audit log. https://buy.stripe.com/eVq5kCdlDerQ25GfF76AM01
+
+## Contact
+
+Open an issue at https://github.com/mbatch79/driftwatch/issues
