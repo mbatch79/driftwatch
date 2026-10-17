@@ -20,7 +20,7 @@
 python -m driftwatch lock            # human: lock vault.yaml after any edit
 python -m driftwatch budget          # what this cycle may spend
 python -m driftwatch cycle 60        # ingest 60 days, diff, verify, brief -> briefs/cycle-N.md
-python -m driftwatch revenue 149 "dev seat"   # record booked revenue (feeds the budget)
+python -m driftwatch revenue 229 "dev seat"   # record booked revenue (feeds the budget)
 python -m driftwatch scan <repo> briefs/cycle-N-findings.json   # lockfile scanner (what the GitHub Action runs)
 ```
 

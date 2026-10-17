@@ -1,0 +1,7 @@
+{
+ "currency": "aud",
+ "livemode": true,
+ "tax_code": "txcd_10103001",
+ "dev": {"product_id": "prod_VSUFn1JODKAGcZ", "price_id": "price_1URZH3ACBrqSoan9rvABwZUl", "payment_link": "https://buy.stripe.com/28E28q2GZ2J8eSs1Oh6AM00", "amount_cents": 22900},
+ "ops": {"product_id": "prod_VSUFCjolNnM8bh", "price_id": "price_1URZH6ACBrqSoan9jHcAmR2L", "payment_link": "https://buy.stripe.com/eVq5kCdlDerQ25GfF76AM01", "amount_cents": 74900}
+}
