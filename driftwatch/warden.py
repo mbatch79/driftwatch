@@ -10,7 +10,7 @@ from pathlib import Path
 
 import yaml
 
-from .diff import Finding, _ops, _params, _schemas, _body_props, _sections
+from .diff import Finding, _ops, _params, _schemas, _body_props, _sections, _response_shape
 
 
 @dataclass
@@ -33,7 +33,7 @@ def _verify_openapi(f: Finding, before: dict, after: dict) -> tuple[bool, str]:
         rest = loc[len("/paths/"):]
         key = rest
         tail = ""
-        for marker in ("/parameters/", "/deprecated", "/requestBody/"):
+        for marker in ("/parameters/", "/deprecated", "/requestBody/", "/responses/"):
             if marker in rest:
                 key, tail = rest.split(marker, 1)
                 tail = marker + tail
@@ -61,6 +61,16 @@ def _verify_openapi(f: Finding, before: dict, after: dict) -> tuple[bool, str]:
         if f.kind == "body_required_added":
             r = tail.rsplit("/", 1)[1]
             return (r in (_body_props(oa[key]).get("required") or []) and r not in (_body_props(ob[key]).get("required") or [])), "body required re-checked"
+        if f.kind == "response_ref_changed":
+            rb, _ = _response_shape(ob[key], before); ra, _ = _response_shape(oa[key], after)
+            old, new = f.detail.rsplit(": ", 1)[1].split(" -> ")
+            return (rb == old and ra == new), "response $ref re-checked"
+        if f.kind in ("response_prop_removed", "response_prop_type_changed"):
+            r = tail.rsplit("/", 1)[1] if f.kind == "response_prop_removed" else tail.rsplit("/", 2)[1]
+            _, pb = _response_shape(ob[key], before); _, pa = _response_shape(oa[key], after)
+            if f.kind == "response_prop_removed":
+                return (r in pb and r not in pa), "response prop re-checked"
+            return (r in pb and r in pa and pb[r].get("type") != pa[r].get("type")), "response type re-checked"
         if f.kind in ("body_prop_removed", "body_prop_renamed"):
             r = tail.rsplit("/", 1)[1]
             pb, pa = _body_props(ob[key]).get("properties") or {}, _body_props(oa[key]).get("properties") or {}

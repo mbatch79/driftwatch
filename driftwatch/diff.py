@@ -80,6 +80,24 @@ def _schemas(spec: dict) -> dict:
     return (spec.get("components") or {}).get("schemas") or {}
 
 
+def _response_shape(op: dict, spec: dict) -> tuple[str | None, dict]:
+    """Success-response schema for an operation, with a one-level $ref resolved.
+    Returns (ref_name_or_None, properties). Inline schemas are diffed in place;
+    $ref'd ones are already covered by the components/schemas pass, so we only
+    report the ref *changing* (which is a shape change for the caller)."""
+    for code in ("200", "201", "default"):
+        r = (op.get("responses") or {}).get(code)
+        if not r:
+            continue
+        for mt, body in (r.get("content") or {}).items():
+            sch = body.get("schema") or {}
+            ref = sch.get("$ref")
+            if ref:
+                return ref.rsplit("/", 1)[-1], {}
+            return None, sch.get("properties") or {}
+    return None, {}
+
+
 def diff_openapi(b: Snapshot, a: Snapshot) -> list[Finding]:
     before, after = _load(b.file), _load(a.file)
     F: list[Finding] = []
@@ -119,6 +137,17 @@ def diff_openapi(b: Snapshot, a: Snapshot) -> list[Finding]:
                 succ = _rename_target(r, pa2 - {r})
                 note = f" (successor already present: {succ})" if succ else ""
                 mk("BREAKING", "body_prop_removed", f"/paths/{key}/requestBody/properties/{r}", f"Request body field removed on {key}: {r}{note}", [key.split(' ',1)[1], r])
+        # success response shape: $ref swapped, or inline fields removed / retyped
+        refb, propb = _response_shape(ob[key], before)
+        refa, propa = _response_shape(oa[key], after)
+        if refb and refa and refb != refa:
+            mk("BREAKING", "response_ref_changed", f"/paths/{key}/responses/schema", f"Success response schema changed on {key}: {refb} -> {refa}", [key.split(' ',1)[1], refb, refa])
+        for r in sorted(set(propb) - set(propa)):
+            mk("BREAKING", "response_prop_removed", f"/paths/{key}/responses/properties/{r}", f"Response field removed on {key}: {r}", [key.split(' ',1)[1], r])
+        for r in sorted(set(propb) & set(propa)):
+            tb, ta = propb[r].get("type"), propa[r].get("type")
+            if tb and ta and tb != ta and not _nullable_widening(tb, ta):
+                mk("BREAKING", "response_prop_type_changed", f"/paths/{key}/responses/properties/{r}/type", f"Response field type changed on {key}: {r} {tb} -> {ta}", [key.split(' ',1)[1], r])
 
     sb, sa = _schemas(before), _schemas(after)
     new_schemas = set(sa) - set(sb)

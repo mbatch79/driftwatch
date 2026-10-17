@@ -26,9 +26,12 @@ python -m driftwatch scan <repo> briefs/cycle-N-findings.json   # lockfile scann
 
 ## Known limits (Cycle 1)
 - Changelog findings are keyword-classified. WARDEN verifies the quoted line exists in the new section; it does not judge semantics. The dependency-tree score is what kills the noise.
-- OpenAPI diff covers endpoints, params, request-body props, schema props, types, enums, deprecation flags. Response-shape changes are not yet diffed.
+- OpenAPI diff covers endpoints, params, request-body props, success-response shape ($ref swap, inline field removed/retyped), schema props, types, enums, deprecation flags. Nested response shapes beyond one $ref level ride on the components/schemas pass.
 - Only `tier: clean` (git-hosted) sources run. Bot-walled docs sites are out of scope until priced into Ops tier.
 - OpenAI's `openapi.json` on `main` moves daily; Stripe's `spec3.json` tracks the latest API version, so a removal there means "gone in the newest version", not necessarily in pinned older versions.
+
+## Weekly cadence
+`.github/workflows/cycle.yml` runs one cycle every Sunday 21:17 UTC (Mon 08:17 Melbourne) on GitHub's runners, commits `briefs/`, `feed/`, `ledger/` back, and opens a `vault`-labelled issue if the cycle ends in anything but NORMAL. Manual runs via *workflow_dispatch*. Requires the repo to live at `mbatch79/driftwatch` (the Action's default feed URL points there).
 
 ## GitHub Action
 `action/action.yml` — drop into a repo; it fetches the latest public `findings.json`, scans the lockfile and source, and writes a job summary of breaking changes that touch that repo. The Dev tier is the upgrade path.

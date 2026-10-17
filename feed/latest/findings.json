@@ -2,6 +2,81 @@
  {
   "source_id": "openai",
   "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_removed",
+  "locator": "/components/schemas/SessionSpendControlParam",
+  "detail": "Schema removed: SessionSpendControlParam",
+  "symbols": [
+   "SessionSpendControlParam"
+  ],
+  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
+  "verified": true,
+  "cycle": 3
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_removed",
+  "locator": "/components/schemas/SessionSpendControlResource",
+  "detail": "Schema removed: SessionSpendControlResource",
+  "symbols": [
+   "SessionSpendControlResource"
+  ],
+  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
+  "verified": true,
+  "cycle": 3
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/CreateAgentSessionParams/properties/spend_control",
+  "detail": "Property removed from CreateAgentSessionParams: spend_control",
+  "symbols": [
+   "CreateAgentSessionParams"
+  ],
+  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
+  "verified": true,
+  "cycle": 3
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/SessionResource/properties/spend_control",
+  "detail": "Property removed from SessionResource: spend_control",
+  "symbols": [
+   "SessionResource"
+  ],
+  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
+  "verified": true,
+  "cycle": 3
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/UpdateAgentSessionParams/properties/spend_control",
+  "detail": "Property removed from UpdateAgentSessionParams: spend_control",
+  "symbols": [
+   "UpdateAgentSessionParams"
+  ],
+  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
+  "verified": true,
+  "cycle": 3
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
   "severity": "DEPRECATION",
   "kind": "schema_prop_deprecated",
   "locator": "/components/schemas/CreateImageEditRequest/properties/user/deprecated",
