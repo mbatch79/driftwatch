@@ -2,7 +2,7 @@
 
 > Dependency-aware breaking-change intelligence for third-party APIs. A deterministic weekly pipeline diffs vendor OpenAPI specs and changelogs, independently re-verifies every finding against source, and publishes the result as JSON.
 
-Operated by Re-Batch (Sale, Victoria, Australia). Source, briefs and ledger: https://github.com/mbatch79/driftwatch
+Operated by Re-Batch Studio (Simpel Pty Ltd, ABN 44 103 034 797), Sale, Victoria, Australia. Source, briefs and ledger: https://github.com/mbatch79/driftwatch
 
 ## What an agent can use right now
 

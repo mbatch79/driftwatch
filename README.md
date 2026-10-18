@@ -35,3 +35,6 @@ python -m driftwatch scan <repo> briefs/cycle-N-findings.json   # lockfile scann
 
 ## GitHub Action
 `action/action.yml` — drop into a repo; it fetches the latest public `findings.json`, scans the lockfile and source, and writes a job summary of breaking changes that touch that repo. The Dev tier is the upgrade path.
+
+## Entity
+Operated by Re-Batch Studio (Simpel Pty Ltd, ABN 44 103 034 797), ACN 103 034 797 — Sale, Victoria, Australia. Business name registered with ASIC 18 Oct 2026.
