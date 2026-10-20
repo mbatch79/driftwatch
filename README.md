@@ -22,12 +22,14 @@ python -m driftwatch budget          # what this cycle may spend
 python -m driftwatch cycle 60        # ingest 60 days, diff, verify, brief -> briefs/cycle-N.md
 python -m driftwatch revenue 229 "dev seat"   # record booked revenue (feeds the budget)
 python -m driftwatch scan <repo> briefs/cycle-N-findings.json   # lockfile scanner (what the GitHub Action runs)
+python -m driftwatch backfill 60     # rebuild public feed + report with exact commits
 ```
 
 ## Known limits (Cycle 1)
 - Changelog findings are keyword-classified. WARDEN verifies the quoted line exists in the new section; it does not judge semantics. The dependency-tree score is what kills the noise.
 - OpenAPI diff covers endpoints, params, request-body props, success-response shape ($ref swap, inline field removed/retyped), schema props, types, enums, deprecation flags. Nested response shapes beyond one $ref level ride on the components/schemas pass.
 - Only `tier: clean` (git-hosted) sources run. Bot-walled docs sites are out of scope until priced into Ops tier.
+- Findings are pinned to the commit that introduced them (`attribute.py`); the brief and feed cite that, not the snapshot range. A backfill (`python -m driftwatch backfill 60`) rebuilds the public feed and report with attribution and merges with earlier cycles.
 - OpenAI's `openapi.json` on `main` moves daily; Stripe's `spec3.json` tracks the latest API version, so a removal there means "gone in the newest version", not necessarily in pinned older versions.
 
 ## Weekly cadence

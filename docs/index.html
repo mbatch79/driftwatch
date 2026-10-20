@@ -68,7 +68,7 @@
   <p class="lede">Driftwatch watches the machine-readable specs of Stripe, OpenAI, Shopify, Twilio and AWS, verifies every breaking change against the source, and alerts you only when it touches code you actually use.</p>
 
   <div class="brief" aria-label="Example brief">
-    <div class="brief-head"><span><strong>openai</strong> openapi.json</span><span>5bdf71b6 → d156763a · 17 Oct 2026</span></div>
+    <div class="brief-head"><span><strong>openai</strong> openapi.json</span><span><a href="https://github.com/openai/openai-openapi/commit/6ca9cb2b" style="color:inherit">6ca9cb2b</a> · 16 Oct 2026</span></div>
     <div class="brief-body">
 <div class="ln ctx"><span class="g"> </span>CreateAgentSessionParams:</div>
 <div class="ln ctx"><span class="g"> </span>  properties:</div>
@@ -89,10 +89,11 @@
     <li><b>Fetch.</b> Each vendor's OpenAPI spec or changelog is pulled from its own repository and compared to the exact commit we checked last time. Nothing is reported twice; nothing is skipped.</li>
     <li><b>Diff.</b> Structural comparison: endpoints, parameters, request and response fields, schema types, enums, deprecation flags. Cosmetic edits never leave this step.</li>
     <li><b>Verify.</b> A second, independent check re-locates every finding in the raw source from its locator alone. Anything it can't reproduce is discarded, not softened.</li>
+    <li><b>Attribute.</b> A third step walks the commits in the range and pins the finding to the first one where it became true, so the link you click shows the change.</li>
     <li><b>Match.</b> On paid plans we hold your lockfile and source. A change is urgent because line 42 calls it, not because a model guessed.</li>
-    <li><b>Deliver.</b> Urgent findings push to Slack or email; the rest arrive in a weekly brief. Every line carries the commit range and a locator you can check yourself.</li>
+    <li><b>Deliver.</b> Urgent findings push to Slack or email; the rest arrive in a weekly brief. Every line carries the exact commit that introduced the change and a locator you can check yourself.</li>
   </ol>
-  <p class="note">Four cycles so far: 229 verified findings, 30 of them breaking, 0 rejected on verification. <a href="https://github.com/mbatch79/driftwatch/tree/main/briefs">Read the briefs.</a></p>
+  <p class="note">Five cycles so far: 229 verified findings, 30 of them breaking, 0 rejected on verification, every one pinned to the commit that caused it. <a href="https://github.com/mbatch79/driftwatch/tree/main/briefs">Read the briefs.</a></p>
 
   <h2 id="free">Start free, in your CI</h2>
   <p>The free GitHub Action reads your lockfile on every build and flags any verified breaking change that touches a package you depend on. No account, no key.</p>

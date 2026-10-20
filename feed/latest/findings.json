@@ -1,125 +1,5 @@
 [
  {
-  "source_id": "openai",
-  "file": "openapi.json",
-  "severity": "BREAKING",
-  "kind": "schema_removed",
-  "locator": "/components/schemas/SessionSpendControlParam",
-  "detail": "Schema removed: SessionSpendControlParam",
-  "symbols": [
-   "SessionSpendControlParam"
-  ],
-  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
-  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
-  "verified": true,
-  "cycle": 3
- },
- {
-  "source_id": "openai",
-  "file": "openapi.json",
-  "severity": "BREAKING",
-  "kind": "schema_removed",
-  "locator": "/components/schemas/SessionSpendControlResource",
-  "detail": "Schema removed: SessionSpendControlResource",
-  "symbols": [
-   "SessionSpendControlResource"
-  ],
-  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
-  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
-  "verified": true,
-  "cycle": 3
- },
- {
-  "source_id": "openai",
-  "file": "openapi.json",
-  "severity": "BREAKING",
-  "kind": "schema_prop_removed",
-  "locator": "/components/schemas/CreateAgentSessionParams/properties/spend_control",
-  "detail": "Property removed from CreateAgentSessionParams: spend_control",
-  "symbols": [
-   "CreateAgentSessionParams"
-  ],
-  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
-  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
-  "verified": true,
-  "cycle": 3
- },
- {
-  "source_id": "openai",
-  "file": "openapi.json",
-  "severity": "BREAKING",
-  "kind": "schema_prop_removed",
-  "locator": "/components/schemas/SessionResource/properties/spend_control",
-  "detail": "Property removed from SessionResource: spend_control",
-  "symbols": [
-   "SessionResource"
-  ],
-  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
-  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
-  "verified": true,
-  "cycle": 3
- },
- {
-  "source_id": "openai",
-  "file": "openapi.json",
-  "severity": "BREAKING",
-  "kind": "schema_prop_removed",
-  "locator": "/components/schemas/UpdateAgentSessionParams/properties/spend_control",
-  "detail": "Property removed from UpdateAgentSessionParams: spend_control",
-  "symbols": [
-   "UpdateAgentSessionParams"
-  ],
-  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
-  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
-  "verified": true,
-  "cycle": 3
- },
- {
-  "source_id": "openai",
-  "file": "openapi.json",
-  "severity": "DEPRECATION",
-  "kind": "schema_prop_deprecated",
-  "locator": "/components/schemas/CreateImageEditRequest/properties/user/deprecated",
-  "detail": "Property deprecated on CreateImageEditRequest: user",
-  "symbols": [
-   "CreateImageEditRequest"
-  ],
-  "before_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
-  "after_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
-  "verified": true,
-  "cycle": 2
- },
- {
-  "source_id": "openai",
-  "file": "openapi.json",
-  "severity": "DEPRECATION",
-  "kind": "schema_prop_deprecated",
-  "locator": "/components/schemas/CreateImageRequest/properties/user/deprecated",
-  "detail": "Property deprecated on CreateImageRequest: user",
-  "symbols": [
-   "CreateImageRequest"
-  ],
-  "before_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
-  "after_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
-  "verified": true,
-  "cycle": 2
- },
- {
-  "source_id": "openai",
-  "file": "openapi.json",
-  "severity": "DEPRECATION",
-  "kind": "schema_prop_deprecated",
-  "locator": "/components/schemas/EditImageBodyJsonParam/properties/user/deprecated",
-  "detail": "Property deprecated on EditImageBodyJsonParam: user",
-  "symbols": [
-   "EditImageBodyJsonParam"
-  ],
-  "before_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
-  "after_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
-  "verified": true,
-  "cycle": 2
- },
- {
   "source_id": "stripe",
   "file": "openapi/spec3.json",
   "severity": "ADDITIVE",
@@ -131,9 +11,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -147,9 +28,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -163,9 +45,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "30d3391cc09a0f67ad29bee002f570811b19e1da",
+  "intro_date": "2026-08-26T17:57:44+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -179,9 +62,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "30d3391cc09a0f67ad29bee002f570811b19e1da",
+  "intro_date": "2026-08-26T17:57:44+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -195,9 +79,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -211,9 +96,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -227,9 +113,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -243,9 +130,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -259,9 +147,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -275,9 +164,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -291,9 +181,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -307,9 +198,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -323,9 +215,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -339,9 +232,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "30d3391cc09a0f67ad29bee002f570811b19e1da",
+  "intro_date": "2026-08-26T17:57:44+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -355,9 +249,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "30d3391cc09a0f67ad29bee002f570811b19e1da",
+  "intro_date": "2026-08-26T17:57:44+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -371,9 +266,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "30d3391cc09a0f67ad29bee002f570811b19e1da",
+  "intro_date": "2026-08-26T17:57:44+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -387,9 +283,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -403,9 +300,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -419,9 +317,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -435,9 +334,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -451,9 +351,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -467,9 +368,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -483,9 +385,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -500,9 +403,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "rename target re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -517,9 +421,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "body prop re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -534,9 +439,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "body prop re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -551,9 +457,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "body prop re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -568,9 +475,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "body prop re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -585,9 +493,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "body prop re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -602,9 +511,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "body prop re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -618,9 +528,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "30d3391cc09a0f67ad29bee002f570811b19e1da",
+  "intro_date": "2026-08-26T17:57:44+00:00",
   "verified": true,
-  "warden_reason": "schema presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -634,9 +545,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "30d3391cc09a0f67ad29bee002f570811b19e1da",
+  "intro_date": "2026-08-26T17:57:44+00:00",
   "verified": true,
-  "warden_reason": "schema presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -650,9 +562,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "c8faccbde66b784ea916d3c28f5790d7a9c9aee2",
+  "intro_date": "2026-09-23T23:02:43+00:00",
   "verified": true,
-  "warden_reason": "prop presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "stripe",
@@ -666,9 +579,10 @@
   ],
   "before_commit": "af5309cae53e5f666f9686dfed306d6d3b5fdc67",
   "after_commit": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
+  "intro_commit": "30d3391cc09a0f67ad29bee002f570811b19e1da",
+  "intro_date": "2026-08-26T17:57:44+00:00",
   "verified": true,
-  "warden_reason": "prop presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -680,11 +594,12 @@
   "symbols": [
    "/evals/{eval_id}/runs/{run_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "19fa5b49f991c2c2340abb5eb3b650b446ebf100",
+  "intro_date": "2026-09-30T18:50:15+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -696,11 +611,12 @@
   "symbols": [
    "/agents/environments/templates/{environment_template_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -712,11 +628,12 @@
   "symbols": [
    "/agents/sessions/{session_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -728,11 +645,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/artifacts/{artifact_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -744,11 +662,12 @@
   "symbols": [
    "/agents/{agent_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -760,11 +679,12 @@
   "symbols": [
    "/organization/external_storage/{external_storage_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7d515d6c562df70caa14ad3b1f7b131e0c151ee3",
+  "intro_date": "2026-09-18T23:35:46+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -776,11 +696,12 @@
   "symbols": [
    "/vaults/{vault_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -792,11 +713,12 @@
   "symbols": [
    "/vaults/{vault_id}/credentials/{credential_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -808,11 +730,12 @@
   "symbols": [
    "/webhook_endpoints/{webhook_endpoint_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f83f0be4b90554acc453183b54540014af3bf4a9",
+  "intro_date": "2026-09-16T17:44:30+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -824,11 +747,12 @@
   "symbols": [
    "/agents"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -840,11 +764,12 @@
   "symbols": [
    "/agents/environments"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "978d0571e61ab2b18b80a84d17276f05403aace7",
+  "intro_date": "2026-10-08T21:10:05+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -856,11 +781,12 @@
   "symbols": [
    "/agents/environments/templates"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -872,11 +798,12 @@
   "symbols": [
    "/agents/environments/templates/{environment_template_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -888,11 +815,12 @@
   "symbols": [
    "/agents/environments/{environment_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -904,11 +832,12 @@
   "symbols": [
    "/agents/environments/{environment_id}/files"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -920,11 +849,12 @@
   "symbols": [
    "/agents/sessions"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -936,11 +866,12 @@
   "symbols": [
    "/agents/sessions/{session_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -952,11 +883,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/artifacts"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -968,11 +900,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/artifacts/{artifact_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -984,11 +917,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/artifacts/{artifact_id}/content"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1000,11 +934,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/events"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1016,11 +951,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/items"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1032,11 +968,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/subagents"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1048,11 +985,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/subagents/{subagent_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1064,11 +1002,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/subagents/{subagent_id}/items"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1080,11 +1019,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/subagents/{subagent_id}/turns"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1096,11 +1036,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1112,11 +1053,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/subagents/{subagent_id}/turns/{turn_id}/items"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1128,11 +1070,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/traces"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "a36ff95bb335c73ab29ef26bebe2488d34106802",
+  "intro_date": "2026-09-30T14:48:55+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1144,11 +1087,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/turns"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1160,11 +1104,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/turns/{turn_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1176,11 +1121,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/turns/{turn_id}/items"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "237b87781da24369f448655d1e3961bfdba43050",
+  "intro_date": "2026-10-02T20:49:22+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1192,11 +1138,12 @@
   "symbols": [
    "/agents/{agent_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1208,11 +1155,12 @@
   "symbols": [
    "/live/sessions/{session_id}/content"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "c8472faf30aa5b6c76711e94d2cb0c1b756e9b80",
+  "intro_date": "2026-09-10T17:13:52+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1224,11 +1172,12 @@
   "symbols": [
    "/organization/external_storage"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7d515d6c562df70caa14ad3b1f7b131e0c151ee3",
+  "intro_date": "2026-09-18T23:35:46+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1240,11 +1189,12 @@
   "symbols": [
    "/organization/external_storage/{external_storage_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7d515d6c562df70caa14ad3b1f7b131e0c151ee3",
+  "intro_date": "2026-09-18T23:35:46+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1256,11 +1206,12 @@
   "symbols": [
    "/organization/usage/decisions"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "e95c0fe615f45a19e8878af923a729948445a6bd",
+  "intro_date": "2026-10-09T20:00:47+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1272,11 +1223,12 @@
   "symbols": [
    "/safety/alerts/{id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "cf79040afd73deda323d2cc869199d4f463bd7ad",
+  "intro_date": "2026-09-03T20:58:57+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1288,11 +1240,12 @@
   "symbols": [
    "/safety/cases/{id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "5d98580228fce7ac97e618ff2badeea9c3144d2e",
+  "intro_date": "2026-09-19T00:44:26+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1304,11 +1257,12 @@
   "symbols": [
    "/vaults"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1320,11 +1274,12 @@
   "symbols": [
    "/vaults/{vault_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1336,11 +1291,12 @@
   "symbols": [
    "/vaults/{vault_id}/credentials"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1352,11 +1308,12 @@
   "symbols": [
    "/vaults/{vault_id}/credentials/{credential_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1368,11 +1325,12 @@
   "symbols": [
    "/webhook_endpoints"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f83f0be4b90554acc453183b54540014af3bf4a9",
+  "intro_date": "2026-09-16T17:44:30+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1384,11 +1342,12 @@
   "symbols": [
    "/webhook_endpoints/{webhook_endpoint_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f83f0be4b90554acc453183b54540014af3bf4a9",
+  "intro_date": "2026-09-16T17:44:30+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1400,11 +1359,12 @@
   "symbols": [
    "/webhook_event_types"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f83f0be4b90554acc453183b54540014af3bf4a9",
+  "intro_date": "2026-09-16T17:44:30+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1416,11 +1376,12 @@
   "symbols": [
    "/agents"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1432,11 +1393,12 @@
   "symbols": [
    "/agents/environments"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "978d0571e61ab2b18b80a84d17276f05403aace7",
+  "intro_date": "2026-10-08T21:10:05+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1448,11 +1410,12 @@
   "symbols": [
    "/agents/environments/templates"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1464,11 +1427,12 @@
   "symbols": [
    "/agents/environments/templates/{environment_template_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1480,11 +1444,12 @@
   "symbols": [
    "/agents/environments/{environment_id}/files"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1496,11 +1461,12 @@
   "symbols": [
    "/agents/sessions"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1512,11 +1478,12 @@
   "symbols": [
    "/agents/sessions/{session_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1528,11 +1495,12 @@
   "symbols": [
    "/agents/sessions/{session_id}/events"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1544,11 +1512,12 @@
   "symbols": [
    "/agents/{agent_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1560,11 +1529,12 @@
   "symbols": [
    "/decisions"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "1f3dba7265384689c60ff08dd75b1c6e81979ae0",
+  "intro_date": "2026-10-06T19:27:47+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1576,11 +1546,12 @@
   "symbols": [
    "/evals/{eval_id}/runs/{run_id}/cancel"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "19fa5b49f991c2c2340abb5eb3b650b446ebf100",
+  "intro_date": "2026-09-30T18:50:15+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1592,11 +1563,12 @@
   "symbols": [
    "/live/sessions"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "c8472faf30aa5b6c76711e94d2cb0c1b756e9b80",
+  "intro_date": "2026-09-10T17:13:52+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1608,11 +1580,12 @@
   "symbols": [
    "/live/sessions/{session_id}/accept"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "c8472faf30aa5b6c76711e94d2cb0c1b756e9b80",
+  "intro_date": "2026-09-10T17:13:52+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1624,11 +1597,12 @@
   "symbols": [
    "/live/sessions/{session_id}/fork"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "c8472faf30aa5b6c76711e94d2cb0c1b756e9b80",
+  "intro_date": "2026-09-10T17:13:52+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1640,11 +1614,12 @@
   "symbols": [
    "/live/sessions/{session_id}/hangup"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "c8472faf30aa5b6c76711e94d2cb0c1b756e9b80",
+  "intro_date": "2026-09-10T17:13:52+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1656,11 +1631,12 @@
   "symbols": [
    "/live/sessions/{session_id}/refer"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "c8472faf30aa5b6c76711e94d2cb0c1b756e9b80",
+  "intro_date": "2026-09-10T17:13:52+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1672,11 +1648,12 @@
   "symbols": [
    "/live/sessions/{session_id}/reject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "c8472faf30aa5b6c76711e94d2cb0c1b756e9b80",
+  "intro_date": "2026-09-10T17:13:52+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1688,11 +1665,12 @@
   "symbols": [
    "/organization/external_storage"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7d515d6c562df70caa14ad3b1f7b131e0c151ee3",
+  "intro_date": "2026-09-18T23:35:46+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1704,11 +1682,12 @@
   "symbols": [
    "/organization/external_storage/{external_storage_id}/validate"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7d515d6c562df70caa14ad3b1f7b131e0c151ee3",
+  "intro_date": "2026-09-18T23:35:46+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1720,11 +1699,12 @@
   "symbols": [
    "/organization/projects/{project_id}/api_keys/{api_key_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "77618e641a840768f1e58197ca53ddedffea6df9",
+  "intro_date": "2026-10-13T01:46:00+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1736,11 +1716,12 @@
   "symbols": [
    "/vaults"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1752,11 +1733,12 @@
   "symbols": [
    "/vaults/{vault_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "bc009d6d1e5e6fb2dc4fa0c88f11d9b51599d699",
+  "intro_date": "2026-10-06T19:47:18+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1768,11 +1750,12 @@
   "symbols": [
    "/vaults/{vault_id}/credentials"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1784,11 +1767,12 @@
   "symbols": [
    "/vaults/{vault_id}/credentials/{credential_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "df63773f69f542ef875b9f00c3837c25ba5f4f2a",
+  "intro_date": "2026-09-10T19:42:42+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1800,11 +1784,12 @@
   "symbols": [
    "/webhook_endpoints"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f83f0be4b90554acc453183b54540014af3bf4a9",
+  "intro_date": "2026-09-16T17:44:30+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1816,11 +1801,12 @@
   "symbols": [
    "/webhook_endpoints/{webhook_endpoint_id}"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f83f0be4b90554acc453183b54540014af3bf4a9",
+  "intro_date": "2026-09-16T17:44:30+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1832,11 +1818,12 @@
   "symbols": [
    "/webhook_endpoints/{webhook_endpoint_id}/rotate_secret"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f83f0be4b90554acc453183b54540014af3bf4a9",
+  "intro_date": "2026-09-16T17:44:30+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1848,11 +1835,12 @@
   "symbols": [
    "/webhook_endpoints/{webhook_endpoint_id}/test"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f83f0be4b90554acc453183b54540014af3bf4a9",
+  "intro_date": "2026-09-16T17:44:30+00:00",
   "verified": true,
-  "warden_reason": "endpoint presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1864,11 +1852,12 @@
   "symbols": [
    "/images/variations"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "cc501ffca9347cbdbfd514686ef7cf9ce8cd5b5c",
+  "intro_date": "2026-09-30T23:37:11+00:00",
   "verified": true,
-  "warden_reason": "deprecated flag re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1880,11 +1869,12 @@
   "symbols": [
    "AudioTranscriptionResponse"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "14b6495caf993ebd47cafded1871a8caf55002b9",
+  "intro_date": "2026-09-28T18:53:46+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1896,11 +1886,12 @@
   "symbols": [
    "Batch"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "aae0ce2c96726d7db5ba08cf59ebc04721ee846f",
+  "intro_date": "2026-09-28T04:25:42+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1912,11 +1903,12 @@
   "symbols": [
    "Batch"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "aae0ce2c96726d7db5ba08cf59ebc04721ee846f",
+  "intro_date": "2026-09-28T04:25:42+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1928,11 +1920,12 @@
   "symbols": [
    "Batch"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f6be21c5e7f32f204af3c6b599a2b90f50b4eb1c",
+  "intro_date": "2026-09-28T18:21:25+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1944,11 +1937,12 @@
   "symbols": [
    "Batch"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f6be21c5e7f32f204af3c6b599a2b90f50b4eb1c",
+  "intro_date": "2026-09-28T18:21:25+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1960,11 +1954,12 @@
   "symbols": [
    "Batch"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "aae0ce2c96726d7db5ba08cf59ebc04721ee846f",
+  "intro_date": "2026-09-28T04:25:42+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1976,11 +1971,12 @@
   "symbols": [
    "Batch"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "aae0ce2c96726d7db5ba08cf59ebc04721ee846f",
+  "intro_date": "2026-09-28T04:25:42+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -1992,11 +1988,12 @@
   "symbols": [
    "Batch"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f6be21c5e7f32f204af3c6b599a2b90f50b4eb1c",
+  "intro_date": "2026-09-28T18:21:25+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2008,11 +2005,12 @@
   "symbols": [
    "Batch"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "aae0ce2c96726d7db5ba08cf59ebc04721ee846f",
+  "intro_date": "2026-09-28T04:25:42+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2024,11 +2022,12 @@
   "symbols": [
    "Batch"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f6be21c5e7f32f204af3c6b599a2b90f50b4eb1c",
+  "intro_date": "2026-09-28T18:21:25+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2040,11 +2039,12 @@
   "symbols": [
    "Batch"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f6be21c5e7f32f204af3c6b599a2b90f50b4eb1c",
+  "intro_date": "2026-09-28T18:21:25+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2056,11 +2056,12 @@
   "symbols": [
    "Batch"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f6be21c5e7f32f204af3c6b599a2b90f50b4eb1c",
+  "intro_date": "2026-09-28T18:21:25+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2072,11 +2073,12 @@
   "symbols": [
    "BetaMCPTool"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "3ae1ccac64e41bfd998708261dbc2b2c64a179e9",
+  "intro_date": "2026-09-16T18:39:29+00:00",
   "verified": true,
-  "warden_reason": "deprecated re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2088,11 +2090,12 @@
   "symbols": [
    "BetaModelResponseProperties"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "78e0725d18d993ea1fea659ac94145aa318e5ea7",
+  "intro_date": "2026-09-28T05:01:48+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2104,11 +2107,12 @@
   "symbols": [
    "BetaResponseFunctionCallArgumentsDoneEvent"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "91cc0564f0e7ea0c53890061f1847162cf93cea7",
+  "intro_date": "2026-09-04T20:31:39+00:00",
   "verified": true,
-  "warden_reason": "prop presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2120,11 +2124,12 @@
   "symbols": [
    "ChatCompletionList"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "883357cf065ef0c7588708416ab3df56d748ecc8",
+  "intro_date": "2026-09-28T18:17:26+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2136,11 +2141,12 @@
   "symbols": [
    "ChatCompletionList"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "883357cf065ef0c7588708416ab3df56d748ecc8",
+  "intro_date": "2026-09-28T18:17:26+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2152,11 +2158,12 @@
   "symbols": [
    "ChatCompletionMessageList"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "87b2daae521cc5f467cd1748bc175a5bf803fd8a",
+  "intro_date": "2026-09-28T18:43:05+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2168,11 +2175,12 @@
   "symbols": [
    "ChatCompletionMessageList"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "87b2daae521cc5f467cd1748bc175a5bf803fd8a",
+  "intro_date": "2026-09-28T18:43:05+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2184,11 +2192,12 @@
   "symbols": [
    "ChatCompletionResponseMessage"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "883357cf065ef0c7588708416ab3df56d748ecc8",
+  "intro_date": "2026-09-28T18:17:26+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2200,11 +2209,12 @@
   "symbols": [
    "CreateCompletionRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2216,11 +2226,12 @@
   "symbols": [
    "CreateCompletionRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2232,11 +2243,12 @@
   "symbols": [
    "CreateCompletionRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2248,11 +2260,12 @@
   "symbols": [
    "CreateCompletionRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2264,11 +2277,12 @@
   "symbols": [
    "CreateCompletionRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2280,11 +2294,12 @@
   "symbols": [
    "CreateCompletionRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2296,11 +2311,12 @@
   "symbols": [
    "CreateCompletionRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2312,11 +2328,12 @@
   "symbols": [
    "CreateCompletionRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2328,11 +2345,12 @@
   "symbols": [
    "CreateCompletionRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2344,11 +2362,12 @@
   "symbols": [
    "CreateCompletionRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2360,11 +2379,12 @@
   "symbols": [
    "CreateCompletionRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2376,11 +2396,12 @@
   "symbols": [
    "CreateCompletionRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2392,11 +2413,12 @@
   "symbols": [
    "CreateCompletionRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2408,11 +2430,12 @@
   "symbols": [
    "CreateFineTuningJobRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "75bbab4b5c7ad75e9e5203a592f1b776a64f5c62",
+  "intro_date": "2026-10-04T04:16:31+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2424,11 +2447,12 @@
   "symbols": [
    "CreateFineTuningJobRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "75bbab4b5c7ad75e9e5203a592f1b776a64f5c62",
+  "intro_date": "2026-10-04T04:16:31+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2440,11 +2464,12 @@
   "symbols": [
    "CreateFineTuningJobRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "75bbab4b5c7ad75e9e5203a592f1b776a64f5c62",
+  "intro_date": "2026-10-04T04:16:31+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2456,11 +2481,12 @@
   "symbols": [
    "CreateFineTuningJobRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "75bbab4b5c7ad75e9e5203a592f1b776a64f5c62",
+  "intro_date": "2026-10-04T04:16:31+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2472,11 +2498,12 @@
   "symbols": [
    "CreateImageEditRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "871d68878a5c179043a4a4ff436b802d246e5088",
+  "intro_date": "2026-10-04T04:19:05+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2488,11 +2515,12 @@
   "symbols": [
    "CreateImageEditRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "871d68878a5c179043a4a4ff436b802d246e5088",
+  "intro_date": "2026-10-04T04:19:05+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2504,11 +2532,12 @@
   "symbols": [
    "CreateImageEditRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "3b7fc8f01f20e707e718ff4e96fde1897c5ba79e",
+  "intro_date": "2026-10-05T15:29:22+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2520,11 +2549,12 @@
   "symbols": [
    "CreateImageEditRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "cc501ffca9347cbdbfd514686ef7cf9ce8cd5b5c",
+  "intro_date": "2026-09-30T23:37:11+00:00",
   "verified": true,
-  "warden_reason": "deprecated re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2536,11 +2566,29 @@
   "symbols": [
    "CreateImageEditRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "871d68878a5c179043a4a4ff436b802d246e5088",
+  "intro_date": "2026-10-04T04:19:05+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "schema_prop_deprecated",
+  "locator": "/components/schemas/CreateImageEditRequest/properties/user/deprecated",
+  "detail": "Property deprecated on CreateImageEditRequest: user",
+  "symbols": [
+   "CreateImageEditRequest"
+  ],
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f601a440c21397028cad2218eca1afd701bf12ec",
+  "intro_date": "2026-10-15T20:48:51+00:00",
+  "verified": true,
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2552,11 +2600,12 @@
   "symbols": [
    "CreateImageRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "75bbab4b5c7ad75e9e5203a592f1b776a64f5c62",
+  "intro_date": "2026-10-04T04:16:31+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2568,11 +2617,12 @@
   "symbols": [
    "CreateImageRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "75bbab4b5c7ad75e9e5203a592f1b776a64f5c62",
+  "intro_date": "2026-10-04T04:16:31+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2584,11 +2634,12 @@
   "symbols": [
    "CreateImageRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "3b7fc8f01f20e707e718ff4e96fde1897c5ba79e",
+  "intro_date": "2026-10-05T15:29:22+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2600,11 +2651,12 @@
   "symbols": [
    "CreateImageRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "cc501ffca9347cbdbfd514686ef7cf9ce8cd5b5c",
+  "intro_date": "2026-09-30T23:37:11+00:00",
   "verified": true,
-  "warden_reason": "deprecated re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2616,11 +2668,12 @@
   "symbols": [
    "CreateImageRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "75bbab4b5c7ad75e9e5203a592f1b776a64f5c62",
+  "intro_date": "2026-10-04T04:16:31+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2632,11 +2685,12 @@
   "symbols": [
    "CreateImageRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "3b7fc8f01f20e707e718ff4e96fde1897c5ba79e",
+  "intro_date": "2026-10-05T15:29:22+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2648,11 +2702,29 @@
   "symbols": [
    "CreateImageRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "cc501ffca9347cbdbfd514686ef7cf9ce8cd5b5c",
+  "intro_date": "2026-09-30T23:37:11+00:00",
   "verified": true,
-  "warden_reason": "deprecated re-checked",
-  "cycle": 1
+  "cycle": 5
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "schema_prop_deprecated",
+  "locator": "/components/schemas/CreateImageRequest/properties/user/deprecated",
+  "detail": "Property deprecated on CreateImageRequest: user",
+  "symbols": [
+   "CreateImageRequest"
+  ],
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f601a440c21397028cad2218eca1afd701bf12ec",
+  "intro_date": "2026-10-15T20:48:51+00:00",
+  "verified": true,
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2664,11 +2736,12 @@
   "symbols": [
    "CreateImageVariationRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "3b7fc8f01f20e707e718ff4e96fde1897c5ba79e",
+  "intro_date": "2026-10-05T15:29:22+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2680,11 +2753,12 @@
   "symbols": [
    "CreateImageVariationRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "3b7fc8f01f20e707e718ff4e96fde1897c5ba79e",
+  "intro_date": "2026-10-05T15:29:22+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2696,11 +2770,12 @@
   "symbols": [
    "CreateImageVariationRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "3b7fc8f01f20e707e718ff4e96fde1897c5ba79e",
+  "intro_date": "2026-10-05T15:29:22+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2712,11 +2787,12 @@
   "symbols": [
    "CreateRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2728,11 +2804,12 @@
   "symbols": [
    "CreateRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2744,11 +2821,12 @@
   "symbols": [
    "CreateRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2760,11 +2838,12 @@
   "symbols": [
    "CreateRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2776,11 +2855,12 @@
   "symbols": [
    "CreateRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2792,11 +2872,12 @@
   "symbols": [
    "CreateRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2808,11 +2889,12 @@
   "symbols": [
    "CreateRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2824,11 +2906,12 @@
   "symbols": [
    "CreateRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2840,11 +2923,12 @@
   "symbols": [
    "CreateRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2856,11 +2940,12 @@
   "symbols": [
    "CreateThreadAndRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2872,11 +2957,12 @@
   "symbols": [
    "CreateThreadAndRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2888,11 +2974,12 @@
   "symbols": [
    "CreateThreadAndRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2904,11 +2991,12 @@
   "symbols": [
    "CreateThreadAndRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2920,11 +3008,12 @@
   "symbols": [
    "CreateThreadAndRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2936,11 +3025,12 @@
   "symbols": [
    "CreateThreadAndRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2952,11 +3042,12 @@
   "symbols": [
    "CreateThreadAndRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2968,11 +3059,12 @@
   "symbols": [
    "CreateThreadAndRunRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "57facfb1862663cddb58db4330d0deb9e612a431",
+  "intro_date": "2026-10-04T05:32:15+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -2984,11 +3076,12 @@
   "symbols": [
    "CreateVoiceRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "40496dbddd5b66bbe0a77d38bcb435884b7b8370",
+  "intro_date": "2026-10-01T05:02:17+00:00",
   "verified": true,
-  "warden_reason": "prop presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3000,11 +3093,12 @@
   "symbols": [
    "CreateVoiceRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "40496dbddd5b66bbe0a77d38bcb435884b7b8370",
+  "intro_date": "2026-10-01T05:02:17+00:00",
   "verified": true,
-  "warden_reason": "prop presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3016,11 +3110,29 @@
   "symbols": [
    "CreateVoiceRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "40496dbddd5b66bbe0a77d38bcb435884b7b8370",
+  "intro_date": "2026-10-01T05:02:17+00:00",
   "verified": true,
-  "warden_reason": "prop presence re-checked",
-  "cycle": 1
+  "cycle": 5
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "schema_prop_deprecated",
+  "locator": "/components/schemas/EditImageBodyJsonParam/properties/user/deprecated",
+  "detail": "Property deprecated on EditImageBodyJsonParam: user",
+  "symbols": [
+   "EditImageBodyJsonParam"
+  ],
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f601a440c21397028cad2218eca1afd701bf12ec",
+  "intro_date": "2026-10-15T20:48:51+00:00",
+  "verified": true,
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3032,11 +3144,12 @@
   "symbols": [
    "EvalRun"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "fe524f2c56edfe59cde878b8d2d8b07c2b5371ef",
+  "intro_date": "2026-09-29T19:33:26+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3048,11 +3161,12 @@
   "symbols": [
    "EvalRun"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "fe524f2c56edfe59cde878b8d2d8b07c2b5371ef",
+  "intro_date": "2026-09-29T19:33:26+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3064,11 +3178,12 @@
   "symbols": [
    "EvalRun"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "fe524f2c56edfe59cde878b8d2d8b07c2b5371ef",
+  "intro_date": "2026-09-29T19:33:26+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3080,11 +3195,12 @@
   "symbols": [
    "EvalRun"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "fe524f2c56edfe59cde878b8d2d8b07c2b5371ef",
+  "intro_date": "2026-09-29T19:33:26+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3096,11 +3212,12 @@
   "symbols": [
    "FineTuningJob"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "883357cf065ef0c7588708416ab3df56d748ecc8",
+  "intro_date": "2026-09-28T18:17:26+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3112,11 +3229,12 @@
   "symbols": [
    "FineTuningJob"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "883357cf065ef0c7588708416ab3df56d748ecc8",
+  "intro_date": "2026-09-28T18:17:26+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3128,11 +3246,12 @@
   "symbols": [
    "FineTuningJobEvent"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "b4c297d906a17279207485dafa1cb3fd6f2a9102",
+  "intro_date": "2026-09-29T19:16:31+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3144,11 +3263,12 @@
   "symbols": [
    "MCPTool"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "3ae1ccac64e41bfd998708261dbc2b2c64a179e9",
+  "intro_date": "2026-09-16T18:39:29+00:00",
   "verified": true,
-  "warden_reason": "deprecated re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3160,11 +3280,12 @@
   "symbols": [
    "ModelResponseProperties"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "78e0725d18d993ea1fea659ac94145aa318e5ea7",
+  "intro_date": "2026-09-28T05:01:48+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3176,11 +3297,12 @@
   "symbols": [
    "OpenAIFile"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "008a26972d41a169e1d150eb5b3e032bc1ca758d",
+  "intro_date": "2026-10-06T00:49:46+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3192,11 +3314,12 @@
   "symbols": [
    "ProjectCreateRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "a0a969c1f51254ff5c0393933787c76e2576912a",
+  "intro_date": "2026-08-24T16:19:39+00:00",
   "verified": true,
-  "warden_reason": "deprecated re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3208,11 +3331,12 @@
   "symbols": [
    "ProjectUpdateRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "a0a969c1f51254ff5c0393933787c76e2576912a",
+  "intro_date": "2026-08-24T16:19:39+00:00",
   "verified": true,
-  "warden_reason": "deprecated re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3224,11 +3348,12 @@
   "symbols": [
    "RealtimeSessionCreateResponse"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "14b6495caf993ebd47cafded1871a8caf55002b9",
+  "intro_date": "2026-09-28T18:53:46+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3240,11 +3365,12 @@
   "symbols": [
    "RealtimeSessionCreateResponseGA"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "14b6495caf993ebd47cafded1871a8caf55002b9",
+  "intro_date": "2026-09-28T18:53:46+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3256,11 +3382,12 @@
   "symbols": [
    "RealtimeTranscriptionSessionCreateResponseGA"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "14b6495caf993ebd47cafded1871a8caf55002b9",
+  "intro_date": "2026-09-28T18:53:46+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3272,11 +3399,12 @@
   "symbols": [
    "ResponseFunctionCallArgumentsDoneEvent"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "91cc0564f0e7ea0c53890061f1847162cf93cea7",
+  "intro_date": "2026-09-04T20:31:39+00:00",
   "verified": true,
-  "warden_reason": "prop presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3288,11 +3416,12 @@
   "symbols": [
    "RunObject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7140eb70916c55d8094c9071a6ec254d723e79b1",
+  "intro_date": "2026-09-28T04:33:33+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3304,11 +3433,12 @@
   "symbols": [
    "RunObject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7140eb70916c55d8094c9071a6ec254d723e79b1",
+  "intro_date": "2026-09-28T04:33:33+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3320,11 +3450,12 @@
   "symbols": [
    "RunObject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7140eb70916c55d8094c9071a6ec254d723e79b1",
+  "intro_date": "2026-09-28T04:33:33+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3336,11 +3467,12 @@
   "symbols": [
    "RunObject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7140eb70916c55d8094c9071a6ec254d723e79b1",
+  "intro_date": "2026-09-28T04:33:33+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3352,11 +3484,12 @@
   "symbols": [
    "RunObject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7140eb70916c55d8094c9071a6ec254d723e79b1",
+  "intro_date": "2026-09-28T04:33:33+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3368,11 +3501,12 @@
   "symbols": [
    "RunObject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7140eb70916c55d8094c9071a6ec254d723e79b1",
+  "intro_date": "2026-09-28T04:33:33+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3384,11 +3518,12 @@
   "symbols": [
    "RunObject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7140eb70916c55d8094c9071a6ec254d723e79b1",
+  "intro_date": "2026-09-28T04:33:33+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3400,11 +3535,12 @@
   "symbols": [
    "RunObject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7140eb70916c55d8094c9071a6ec254d723e79b1",
+  "intro_date": "2026-09-28T04:33:33+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3416,11 +3552,12 @@
   "symbols": [
    "RunObject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7140eb70916c55d8094c9071a6ec254d723e79b1",
+  "intro_date": "2026-09-28T04:33:33+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3432,11 +3569,12 @@
   "symbols": [
    "RunObject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7140eb70916c55d8094c9071a6ec254d723e79b1",
+  "intro_date": "2026-09-28T04:33:33+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3448,11 +3586,12 @@
   "symbols": [
    "RunObject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7140eb70916c55d8094c9071a6ec254d723e79b1",
+  "intro_date": "2026-09-28T04:33:33+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3464,11 +3603,12 @@
   "symbols": [
    "RunObject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "7140eb70916c55d8094c9071a6ec254d723e79b1",
+  "intro_date": "2026-09-28T04:33:33+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3480,11 +3620,12 @@
   "symbols": [
    "UpdateVectorStoreRequest"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "680d8c875581ae3670e152442aea35a2a477b580",
+  "intro_date": "2026-10-04T07:24:53+00:00",
   "verified": true,
-  "warden_reason": "type re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "openai",
@@ -3496,11 +3637,12 @@
   "symbols": [
    "VectorStoreFileBatchObject"
   ],
-  "before_commit": "2186421dca0cca7c1e67caa7739005e8b1ccc4dd",
-  "after_commit": "5068a57f0df0315ea7f3e7daf20128abf81386ef",
+  "before_commit": "010421dcbd0475277ea8c3e6c1e1cbca4659c4bd",
+  "after_commit": "5cc3a83b491bb6abe8a3c6c4a838b75ddd39c860",
+  "intro_commit": "f6be21c5e7f32f204af3c6b599a2b90f50b4eb1c",
+  "intro_date": "2026-09-28T18:21:25+00:00",
   "verified": true,
-  "warden_reason": "enum re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "twilio",
@@ -3514,9 +3656,10 @@
   ],
   "before_commit": "591755b562834daae097da2371e821f349c5f489",
   "after_commit": "218b7821602a93ae63e83e20ab5e8637e870250f",
+  "intro_commit": "5aa7f31977ce5812f7b7bc1f46a38555ebaa2888",
+  "intro_date": "2026-09-09T16:12:33+05:30",
   "verified": true,
-  "warden_reason": "schema presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "twilio",
@@ -3530,9 +3673,10 @@
   ],
   "before_commit": "591755b562834daae097da2371e821f349c5f489",
   "after_commit": "218b7821602a93ae63e83e20ab5e8637e870250f",
+  "intro_commit": "ef1d81e7b6e49e602530601e913eedc21aedd6da",
+  "intro_date": "2026-08-27T15:36:36+05:30",
   "verified": true,
-  "warden_reason": "schema presence re-checked",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "aws-sdk-js",
@@ -3555,11 +3699,12 @@
    "client-resiliencehubv2",
    "client-route-53-domains"
   ],
-  "before_commit": "c41e9a98d4227b06099fdc7ea42bcf6fc5a1029f",
-  "after_commit": "3ce8aa778c22193dad5f7fcefe239e3a74a3cd4f",
+  "before_commit": "efc86fc9c3f80861228ad7f1b2fc97084b7a1c20",
+  "after_commit": "35085844c581d910f51deea1b2de48f6b4ffa704",
+  "intro_commit": "d6adfcb7baa396dd42060a74382b6aa2a1cbf0b5",
+  "intro_date": "2026-10-13T18:32:26+00:00",
   "verified": true,
-  "warden_reason": "quoted lines re-located in section",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "aws-sdk-js",
@@ -3577,11 +3722,12 @@
    "client-sts",
    "clients"
   ],
-  "before_commit": "c41e9a98d4227b06099fdc7ea42bcf6fc5a1029f",
-  "after_commit": "3ce8aa778c22193dad5f7fcefe239e3a74a3cd4f",
+  "before_commit": "efc86fc9c3f80861228ad7f1b2fc97084b7a1c20",
+  "after_commit": "35085844c581d910f51deea1b2de48f6b4ffa704",
+  "intro_commit": "99b4bd0c8c08583a1ed31e7d8e04c0ef851c8210",
+  "intro_date": "2026-09-14T19:05:28+00:00",
   "verified": true,
-  "warden_reason": "quoted lines re-located in section",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "aws-sdk-js",
@@ -3604,11 +3750,12 @@
    "clients",
    "lib-storage"
   ],
-  "before_commit": "c41e9a98d4227b06099fdc7ea42bcf6fc5a1029f",
-  "after_commit": "3ce8aa778c22193dad5f7fcefe239e3a74a3cd4f",
+  "before_commit": "efc86fc9c3f80861228ad7f1b2fc97084b7a1c20",
+  "after_commit": "35085844c581d910f51deea1b2de48f6b4ffa704",
+  "intro_commit": "523fff6052428fafb61b8842773c1c142d4c5f74",
+  "intro_date": "2026-09-08T18:16:45+00:00",
   "verified": true,
-  "warden_reason": "quoted lines re-located in section",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "aws-sdk-js",
@@ -3631,11 +3778,12 @@
    "client-transfer",
    "lib-transfer-manager"
   ],
-  "before_commit": "c41e9a98d4227b06099fdc7ea42bcf6fc5a1029f",
-  "after_commit": "3ce8aa778c22193dad5f7fcefe239e3a74a3cd4f",
+  "before_commit": "efc86fc9c3f80861228ad7f1b2fc97084b7a1c20",
+  "after_commit": "35085844c581d910f51deea1b2de48f6b4ffa704",
+  "intro_commit": "7131e7467d87d0a255fa1c42f6bb0dd12a84835e",
+  "intro_date": "2026-09-03T18:18:46+00:00",
   "verified": true,
-  "warden_reason": "quoted lines re-located in section",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "aws-sdk-js",
@@ -3653,11 +3801,12 @@
    "client-lambda-microvms",
    "client-rds"
   ],
-  "before_commit": "c41e9a98d4227b06099fdc7ea42bcf6fc5a1029f",
-  "after_commit": "3ce8aa778c22193dad5f7fcefe239e3a74a3cd4f",
+  "before_commit": "efc86fc9c3f80861228ad7f1b2fc97084b7a1c20",
+  "after_commit": "35085844c581d910f51deea1b2de48f6b4ffa704",
+  "intro_commit": "d6be6f8dd3ee8d43fd70dfb5b52a977ce251c720",
+  "intro_date": "2026-08-27T19:03:42+00:00",
   "verified": true,
-  "warden_reason": "quoted lines re-located in section",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "shopify-api-js",
@@ -3673,9 +3822,10 @@
   ],
   "before_commit": "e7654fc6ac3b6ef1ec45efe28a84263b59f81ed0",
   "after_commit": "8868403d534e2995253a16ee5f81ef9b5250fbc8",
+  "intro_commit": "8868403d534e2995253a16ee5f81ef9b5250fbc8",
+  "intro_date": "2026-10-08T18:16:07+00:00",
   "verified": true,
-  "warden_reason": "quoted lines re-located in section",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "shopify-api-js",
@@ -3697,9 +3847,10 @@
   ],
   "before_commit": "e7654fc6ac3b6ef1ec45efe28a84263b59f81ed0",
   "after_commit": "8868403d534e2995253a16ee5f81ef9b5250fbc8",
+  "intro_commit": "d42566353b22e286de8a6dad77da70934f362efc",
+  "intro_date": "2026-09-01T18:30:36+00:00",
   "verified": true,
-  "warden_reason": "quoted lines re-located in section",
-  "cycle": 1
+  "cycle": 5
  },
  {
   "source_id": "shopify-api-js",
@@ -3719,8 +3870,94 @@
   ],
   "before_commit": "e7654fc6ac3b6ef1ec45efe28a84263b59f81ed0",
   "after_commit": "8868403d534e2995253a16ee5f81ef9b5250fbc8",
+  "intro_commit": "8c32b982b3f6289beb41c07f1a4acb57de91e554",
+  "intro_date": "2026-08-27T16:12:26+00:00",
   "verified": true,
-  "warden_reason": "quoted lines re-located in section",
-  "cycle": 1
+  "cycle": 5
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_removed",
+  "locator": "/components/schemas/SessionSpendControlParam",
+  "detail": "Schema removed: SessionSpendControlParam",
+  "symbols": [
+   "SessionSpendControlParam"
+  ],
+  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
+  "verified": true,
+  "cycle": 3,
+  "intro_commit": "6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840",
+  "intro_date": "2026-10-16T19:10:05+00:00"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_removed",
+  "locator": "/components/schemas/SessionSpendControlResource",
+  "detail": "Schema removed: SessionSpendControlResource",
+  "symbols": [
+   "SessionSpendControlResource"
+  ],
+  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
+  "verified": true,
+  "cycle": 3,
+  "intro_commit": "6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840",
+  "intro_date": "2026-10-16T19:10:05+00:00"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/CreateAgentSessionParams/properties/spend_control",
+  "detail": "Property removed from CreateAgentSessionParams: spend_control",
+  "symbols": [
+   "CreateAgentSessionParams"
+  ],
+  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
+  "verified": true,
+  "cycle": 3,
+  "intro_commit": "6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840",
+  "intro_date": "2026-10-16T19:10:05+00:00"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/SessionResource/properties/spend_control",
+  "detail": "Property removed from SessionResource: spend_control",
+  "symbols": [
+   "SessionResource"
+  ],
+  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
+  "verified": true,
+  "cycle": 3,
+  "intro_commit": "6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840",
+  "intro_date": "2026-10-16T19:10:05+00:00"
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/UpdateAgentSessionParams/properties/spend_control",
+  "detail": "Property removed from UpdateAgentSessionParams: spend_control",
+  "symbols": [
+   "UpdateAgentSessionParams"
+  ],
+  "before_commit": "5bdf71b6a5085282b80d6810438c2a0a38037378",
+  "after_commit": "d156763a484eb247e116e0ea345e16344b0049ba",
+  "verified": true,
+  "cycle": 3,
+  "intro_commit": "6ca9cb2b2dd5fbe766c32f3ab898e2e479c29840",
+  "intro_date": "2026-10-16T19:10:05+00:00"
  }
 ]

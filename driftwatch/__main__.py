@@ -11,7 +11,7 @@ from pathlib import Path
 
 import yaml
 
-from . import scout, diff, warden, vault, quill, tree
+from . import scout, diff, warden, vault, quill, tree, attribute, report
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "briefs"
@@ -39,6 +39,17 @@ def run_cycle(window_days: int = 60) -> int:
     snaps = {(b.source_id, b.path): (b.file, a.file) for b, a in pairs}
     verdicts = warden.verify(findings, snaps, kinds)
     fr = warden.fail_rate(verdicts)
+
+    # Pin each verified finding to the commit that actually introduced it, so a
+    # reader who clicks through sees the change rather than a week-wide range.
+    att = attribute.attribute([v.finding for v in verdicts if v.verified], pairs, kinds)
+    for v in verdicts:
+        f = v.finding
+        sha, date = att.get((f.source_id, f.file, f.locator, f.kind), ("", ""))
+        f.intro_commit, f.intro_date = sha, date
+    n_att = sum(1 for v in verdicts if v.verified and v.finding.intro_commit)
+    n_ver = sum(1 for v in verdicts if v.verified)
+    print(f"[ATTRIBUTE] {n_att}/{n_ver} verified findings pinned to an exact commit")
     print(f"[WARDEN] fail-rate {fr:.1f}%")
 
     # Cycle 1 is fully deterministic: no model tokens burned. Metered anyway.
@@ -88,6 +99,42 @@ def main(argv: list[str]):
         with (ROOT / "ledger" / "revenue.jsonl").open("a") as f:
             f.write(json.dumps(rec) + "\n")
         print("[VAULT] revenue recorded")
+    elif cmd == "backfill":
+        # Rebuild the public feed and report over a full window, with commit attribution.
+        # Does not touch watermarks: the weekly cycle keeps running incrementally.
+        days = int(argv[2]) if len(argv) > 2 else 60
+        pairs = scout.ingest(days, incremental=False)
+        kinds = {s["id"]: s["diff_kind"] for s in scout.load_sources()}
+        F = diff.run(pairs, kinds)
+        snaps = {(b.source_id, b.path): (b.file, a.file) for b, a in pairs}
+        V = warden.verify(F, snaps, kinds)
+        ok = [v.finding for v in V if v.verified]
+        att = attribute.attribute(ok, pairs, kinds)
+        for f in ok:
+            f.intro_commit, f.intro_date = att.get((f.source_id, f.file, f.locator, f.kind), ("", ""))
+        cyc = len(list(OUT.glob("cycle-*.md"))) if OUT.exists() else 1
+        rows = [{**f.to_dict(), "verified": True, "cycle": cyc} for f in ok]
+        # Merge, don't replace: weekly cycles catch changes that happen and reverse
+        # inside the window, which an endpoint-to-endpoint comparison cannot see.
+        feed = ROOT / "feed" / "latest"; feed.mkdir(parents=True, exist_ok=True)
+        prev = json.loads((feed / "findings.json").read_text()) if (feed / "findings.json").exists() else []
+        seen = {(r["source_id"], r["file"], r["locator"], r["kind"]) for r in rows}
+        kept = 0
+        for r in prev:
+            k = (r["source_id"], r.get("file", ""), r["locator"], r["kind"])
+            if k in seen:
+                continue
+            if not r.get("intro_commit"):
+                sha, date = attribute.attribute_record(r)
+                r["intro_commit"], r["intro_date"] = sha, date
+            rows.append(r); seen.add(k); kept += 1
+        print(f"[BACKFILL] merged {kept} findings from earlier cycles")
+        (feed / "findings.json").write_text(json.dumps(rows, indent=1))
+        dates = sorted(f.intro_date[:10] for f in ok if f.intro_date)
+        window = f"{dates[0]} to {dates[-1]}" if dates else f"last {days} days"
+        out = report.build(rows, window, ROOT / "docs" / "reports" / "2026-10-breaking-changes.html")
+        print(f"[BACKFILL] {len(ok)} verified · {sum(1 for f in ok if f.intro_commit)} pinned to a commit")
+        print(f"[BACKFILL] wrote feed/latest/findings.json and {out.relative_to(ROOT)}")
     elif cmd == "cycle":
         run_cycle(int(argv[2]) if len(argv) > 2 else 60)
     elif cmd == "scan":

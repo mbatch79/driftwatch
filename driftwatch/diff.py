@@ -24,6 +24,8 @@ class Finding:
     symbols: list[str]     # endpoint paths / schema names a dependency tree can match on
     before_commit: str
     after_commit: str
+    intro_commit: str = ""   # exact commit that introduced the change (attribute.py)
+    intro_date: str = ""
 
     def to_dict(self):
         return asdict(self)

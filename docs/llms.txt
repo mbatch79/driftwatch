@@ -23,8 +23,10 @@ Operated by Re-Batch Studio (Simpel Pty Ltd, ABN 44 103 034 797), Sale, Victoria
   "locator":       "JSON pointer into the OpenAPI document, or '#<heading>' for a changelog section — re-checkable by anyone",
   "detail":        "one-line human description",
   "symbols":       ["endpoint paths, schema names and field names a dependency tree can match on"],
-  "before_commit": "git sha of the previous version",
-  "after_commit":  "git sha of the version that introduced the change",
+  "before_commit": "git sha at the start of the comparison range",
+  "after_commit":  "git sha at the end of the comparison range",
+  "intro_commit":  "git sha of the commit that actually introduced the change — open this to see the diff",
+  "intro_date":    "ISO date of intro_commit",
   "verified":      true,
   "cycle":         4
 }
@@ -32,6 +34,7 @@ Operated by Re-Batch Studio (Simpel Pty Ltd, ABN 44 103 034 797), Sale, Victoria
 ## Interpretation notes
 
 - Every entry in the feed passed an independent verification step that re-located it in the raw spec from the locator alone. Entries that fail are not published.
+- `intro_commit` is found by walking the commits in the range and re-running the verifier against each; it is the first commit where the finding becomes true. Cite it rather than the range when telling a human where a change came from.
 - OpenAPI findings are structural and exact. `changelog_entry` findings are keyword-classified from release notes; the quoted lines are verified to exist, the severity is a heuristic.
 - Specs track each vendor's newest published API version. "Removed" means removed in the newest version; a consumer pinned to an older version may be unaffected. Compare the locator against the pinned version before acting.
 - Vendors covered: Stripe (openapi/spec3.json), OpenAI (openapi.json), Twilio (api v2010, messaging v1), AWS SDK for JavaScript v3 (CHANGELOG.md), Shopify API JS (CHANGELOG.md).

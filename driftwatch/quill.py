@@ -38,7 +38,8 @@ def brief(cycle: int, verdicts: list[Verdict], budget: dict, spend: float, mode:
         for v in breaking:
             f = v.finding
             conf = " _(keyword-classified from changelog; WARDEN verified the quote, not the semantics)_" if f.kind == "changelog_entry" else ""
-            L.append(f"- **{f.severity}** · {f.detail}{conf}  \n  locator `{f.locator}` · {f.before_commit[:8]} → {f.after_commit[:8]}")
+            commit = (f"introduced in `{f.intro_commit[:8]}`" + (f" ({f.intro_date[:10]})" if f.intro_date else "")) if f.intro_commit else f"in range {f.before_commit[:8]} → {f.after_commit[:8]}"
+            L.append(f"- **{f.severity}** · {f.detail}{conf}  \n  locator `{f.locator}` · {commit}")
         if additive:
             L.append(f"- _{len(additive)} additive changes (new endpoints/fields) — safe, omitted from brief; full list in findings.json_")
     if rej:
