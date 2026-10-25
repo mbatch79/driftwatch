@@ -1,5 +1,464 @@
 [
  {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/DELETE /agents/automations/{automation_id}",
+  "detail": "Endpoint added: DELETE /agents/automations/{automation_id}",
+  "symbols": [
+   "/agents/automations/{automation_id}"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "7d4f4afcbd4f18f2a1d87bedcccd80ac43582194",
+  "intro_date": "2026-10-23T18:07:31Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/DELETE /audio/voices/{voice_id}",
+  "detail": "Endpoint added: DELETE /audio/voices/{voice_id}",
+  "symbols": [
+   "/audio/voices/{voice_id}"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "a13fbb7da3a6705134e5e90ba2b61134b3e7f7ca",
+  "intro_date": "2026-10-21T22:03:16Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/automations",
+  "detail": "Endpoint added: GET /agents/automations",
+  "symbols": [
+   "/agents/automations"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "7d4f4afcbd4f18f2a1d87bedcccd80ac43582194",
+  "intro_date": "2026-10-23T18:07:31Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/automations/{automation_id}",
+  "detail": "Endpoint added: GET /agents/automations/{automation_id}",
+  "symbols": [
+   "/agents/automations/{automation_id}"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "7d4f4afcbd4f18f2a1d87bedcccd80ac43582194",
+  "intro_date": "2026-10-23T18:07:31Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/automations/{automation_id}/invocations",
+  "detail": "Endpoint added: GET /agents/automations/{automation_id}/invocations",
+  "symbols": [
+   "/agents/automations/{automation_id}/invocations"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "7d4f4afcbd4f18f2a1d87bedcccd80ac43582194",
+  "intro_date": "2026-10-23T18:07:31Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /agents/automations/{automation_id}/invocations/{invocation_id}",
+  "detail": "Endpoint added: GET /agents/automations/{automation_id}/invocations/{invocation_id}",
+  "symbols": [
+   "/agents/automations/{automation_id}/invocations/{invocation_id}"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "7d4f4afcbd4f18f2a1d87bedcccd80ac43582194",
+  "intro_date": "2026-10-23T18:07:31Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents/automations",
+  "detail": "Endpoint added: POST /agents/automations",
+  "symbols": [
+   "/agents/automations"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "7d4f4afcbd4f18f2a1d87bedcccd80ac43582194",
+  "intro_date": "2026-10-23T18:07:31Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents/automations/{automation_id}",
+  "detail": "Endpoint added: POST /agents/automations/{automation_id}",
+  "symbols": [
+   "/agents/automations/{automation_id}"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "7d4f4afcbd4f18f2a1d87bedcccd80ac43582194",
+  "intro_date": "2026-10-23T18:07:31Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents/automations/{automation_id}/invocations",
+  "detail": "Endpoint added: POST /agents/automations/{automation_id}/invocations",
+  "symbols": [
+   "/agents/automations/{automation_id}/invocations"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "7d4f4afcbd4f18f2a1d87bedcccd80ac43582194",
+  "intro_date": "2026-10-23T18:07:31Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents/automations/{automation_id}/pause",
+  "detail": "Endpoint added: POST /agents/automations/{automation_id}/pause",
+  "symbols": [
+   "/agents/automations/{automation_id}/pause"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "7d4f4afcbd4f18f2a1d87bedcccd80ac43582194",
+  "intro_date": "2026-10-23T18:07:31Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /agents/automations/{automation_id}/resume",
+  "detail": "Endpoint added: POST /agents/automations/{automation_id}/resume",
+  "symbols": [
+   "/agents/automations/{automation_id}/resume"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "7d4f4afcbd4f18f2a1d87bedcccd80ac43582194",
+  "intro_date": "2026-10-23T18:07:31Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_removed",
+  "locator": "/components/schemas/LiveDecisionQuestionsInputParam-2",
+  "detail": "Schema removed: LiveDecisionQuestionsInputParam-2",
+  "symbols": [
+   "LiveDecisionQuestionsInputParam-2"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_date": "2026-10-24T04:05:56Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_removed",
+  "locator": "/components/schemas/LiveDecisionTriggerInputParam-2",
+  "detail": "Schema removed: LiveDecisionTriggerInputParam-2",
+  "symbols": [
+   "LiveDecisionTriggerInputParam-2"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_date": "2026-10-24T04:05:56Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_removed",
+  "locator": "/components/schemas/LiveDecisionsDelegationParam-2",
+  "detail": "Schema removed: LiveDecisionsDelegationParam-2",
+  "symbols": [
+   "LiveDecisionsDelegationParam-2"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_date": "2026-10-24T04:05:56Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_removed",
+  "locator": "/components/schemas/LiveDecisionsSettingsInputParam-2",
+  "detail": "Schema removed: LiveDecisionsSettingsInputParam-2",
+  "symbols": [
+   "LiveDecisionsSettingsInputParam-2"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_date": "2026-10-24T04:05:56Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/DecisionInputMessage/properties/content",
+  "detail": "Property removed from DecisionInputMessage: content",
+  "symbols": [
+   "DecisionInputMessage"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "290bd01b67ff8fc8f87545794197c1413fb740d1",
+  "intro_date": "2026-10-22T17:29:02Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/DecisionInputMessage/properties/phase",
+  "detail": "Property removed from DecisionInputMessage: phase",
+  "symbols": [
+   "DecisionInputMessage"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "290bd01b67ff8fc8f87545794197c1413fb740d1",
+  "intro_date": "2026-10-22T17:29:02Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/DecisionInputMessage/properties/role",
+  "detail": "Property removed from DecisionInputMessage: role",
+  "symbols": [
+   "DecisionInputMessage"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "290bd01b67ff8fc8f87545794197c1413fb740d1",
+  "intro_date": "2026-10-22T17:29:02Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/DecisionInputMessage/properties/type",
+  "detail": "Property removed from DecisionInputMessage: type",
+  "symbols": [
+   "DecisionInputMessage"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "290bd01b67ff8fc8f87545794197c1413fb740d1",
+  "intro_date": "2026-10-22T17:29:02Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/LiveDecisionInputItemParam/properties/content",
+  "detail": "Property removed from LiveDecisionInputItemParam: content",
+  "symbols": [
+   "LiveDecisionInputItemParam"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_date": "2026-10-24T04:05:56Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/LiveDecisionInputItemParam/properties/id",
+  "detail": "Property removed from LiveDecisionInputItemParam: id",
+  "symbols": [
+   "LiveDecisionInputItemParam"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_date": "2026-10-24T04:05:56Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/LiveDecisionInputItemParam/properties/role",
+  "detail": "Property removed from LiveDecisionInputItemParam: role",
+  "symbols": [
+   "LiveDecisionInputItemParam"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_date": "2026-10-24T04:05:56Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/LiveDecisionInputItemParam/properties/type",
+  "detail": "Property removed from LiveDecisionInputItemParam: type",
+  "symbols": [
+   "LiveDecisionInputItemParam"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_date": "2026-10-24T04:05:56Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/LiveDecisionStoredInputItemParam/properties/content",
+  "detail": "Property removed from LiveDecisionStoredInputItemParam: content",
+  "symbols": [
+   "LiveDecisionStoredInputItemParam"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_date": "2026-10-24T04:05:56Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/LiveDecisionStoredInputItemParam/properties/id",
+  "detail": "Property removed from LiveDecisionStoredInputItemParam: id",
+  "symbols": [
+   "LiveDecisionStoredInputItemParam"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_date": "2026-10-24T04:05:56Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/LiveDecisionStoredInputItemParam/properties/role",
+  "detail": "Property removed from LiveDecisionStoredInputItemParam: role",
+  "symbols": [
+   "LiveDecisionStoredInputItemParam"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_date": "2026-10-24T04:05:56Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_prop_removed",
+  "locator": "/components/schemas/LiveDecisionStoredInputItemParam/properties/type",
+  "detail": "Property removed from LiveDecisionStoredInputItemParam: type",
+  "symbols": [
+   "LiveDecisionStoredInputItemParam"
+  ],
+  "before_commit": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+  "after_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "intro_date": "2026-10-24T04:05:56Z",
+  "verified": true,
+  "cycle": 6
+ },
+ {
   "source_id": "stripe",
   "file": "openapi/spec3.json",
   "severity": "ADDITIVE",

@@ -1,6 +1,6 @@
 {
- "aws-sdk-js:CHANGELOG.md": "3ce8aa778c22193dad5f7fcefe239e3a74a3cd4f",
- "openai:openapi.json": "f88d2f78b75f46b53b0baef3f5f47dc991add4a2",
+ "aws-sdk-js:CHANGELOG.md": "163a566ffba89915cade6109031c5892ea3193c4",
+ "openai:openapi.json": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
  "shopify-api-js:packages/apps/shopify-api/CHANGELOG.md": "8868403d534e2995253a16ee5f81ef9b5250fbc8",
  "stripe:openapi/spec3.json": "bcfd59f49dcac84a84d63d304c62793dff6e5916",
  "twilio:spec/json/twilio_api_v2010.json": "157fb094bd08957183278242d7622c8560b7a4c4",
