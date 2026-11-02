@@ -4,6 +4,126 @@
   "file": "openapi.json",
   "severity": "ADDITIVE",
   "kind": "endpoint_added",
+  "locator": "/paths/DELETE /organization/external_keys/{external_key_id}",
+  "detail": "Endpoint added: DELETE /organization/external_keys/{external_key_id}",
+  "symbols": [
+   "/organization/external_keys/{external_key_id}"
+  ],
+  "before_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "after_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "intro_commit": "b3e28b9f099b713925a6100b83cd77d96ff45a18",
+  "intro_date": "2026-10-28T04:52:52Z",
+  "verified": true,
+  "cycle": 7
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /organization/external_keys",
+  "detail": "Endpoint added: GET /organization/external_keys",
+  "symbols": [
+   "/organization/external_keys"
+  ],
+  "before_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "after_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "intro_commit": "b3e28b9f099b713925a6100b83cd77d96ff45a18",
+  "intro_date": "2026-10-28T04:52:52Z",
+  "verified": true,
+  "cycle": 7
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /organization/external_keys/{external_key_id}",
+  "detail": "Endpoint added: GET /organization/external_keys/{external_key_id}",
+  "symbols": [
+   "/organization/external_keys/{external_key_id}"
+  ],
+  "before_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "after_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "intro_commit": "b3e28b9f099b713925a6100b83cd77d96ff45a18",
+  "intro_date": "2026-10-28T04:52:52Z",
+  "verified": true,
+  "cycle": 7
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /organization/external_keys",
+  "detail": "Endpoint added: POST /organization/external_keys",
+  "symbols": [
+   "/organization/external_keys"
+  ],
+  "before_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "after_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "intro_commit": "b3e28b9f099b713925a6100b83cd77d96ff45a18",
+  "intro_date": "2026-10-28T04:52:52Z",
+  "verified": true,
+  "cycle": 7
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /organization/external_keys/{external_key_id}/validate",
+  "detail": "Endpoint added: POST /organization/external_keys/{external_key_id}/validate",
+  "symbols": [
+   "/organization/external_keys/{external_key_id}/validate"
+  ],
+  "before_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "after_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "intro_commit": "b3e28b9f099b713925a6100b83cd77d96ff45a18",
+  "intro_date": "2026-10-28T04:52:52Z",
+  "verified": true,
+  "cycle": 7
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "DEPRECATION",
+  "kind": "endpoint_deprecated",
+  "locator": "/paths/POST /audio/translations/deprecated",
+  "detail": "Endpoint marked deprecated: POST /audio/translations",
+  "symbols": [
+   "/audio/translations"
+  ],
+  "before_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "after_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "intro_commit": "ff80a233ed16a05164390fd7fc92f085414a0f67",
+  "intro_date": "2026-10-28T05:40:27Z",
+  "verified": true,
+  "cycle": 7
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "BREAKING",
+  "kind": "schema_renamed",
+  "locator": "/components/schemas/LiveTransportDTMFSend",
+  "detail": "Schema RENAMED: LiveTransportDTMFSend -> LiveTransportDTMFSendParam",
+  "symbols": [
+   "LiveTransportDTMFSend",
+   "LiveTransportDTMFSendParam"
+  ],
+  "before_commit": "8243cc8fa6f04430fb1f1a6a2cb926fbeb4f7f26",
+  "after_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "intro_commit": "cfe1bd3dab4b742db6c955e9b77aef6523dcc51d",
+  "intro_date": "2026-10-28T05:20:45Z",
+  "verified": true,
+  "cycle": 7
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
   "locator": "/paths/DELETE /agents/automations/{automation_id}",
   "detail": "Endpoint added: DELETE /agents/automations/{automation_id}",
   "symbols": [
