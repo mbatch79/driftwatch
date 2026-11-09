@@ -4,6 +4,286 @@
   "file": "openapi.json",
   "severity": "ADDITIVE",
   "kind": "endpoint_added",
+  "locator": "/paths/DELETE /organization/workload_identity_providers/{workload_identity_provider_id}",
+  "detail": "Endpoint added: DELETE /organization/workload_identity_providers/{workload_identity_provider_id}",
+  "symbols": [
+   "/organization/workload_identity_providers/{workload_identity_provider_id}"
+  ],
+  "before_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "after_commit": "926a7b8133226630bac025350e84b0ca5c31d45a",
+  "intro_commit": "d5d3e0158bae888222ff6bf0a3f26d68e33b5f15",
+  "intro_date": "2026-11-03T18:52:10Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/DELETE /organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules/{workload_identity_federation_rule_id}",
+  "detail": "Endpoint added: DELETE /organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules/{workload_identity_federation_rule_id}",
+  "symbols": [
+   "/organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules/{workload_identity_federation_rule_id}"
+  ],
+  "before_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "after_commit": "926a7b8133226630bac025350e84b0ca5c31d45a",
+  "intro_commit": "d5d3e0158bae888222ff6bf0a3f26d68e33b5f15",
+  "intro_date": "2026-11-03T18:52:10Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /organization/projects/{project_id}/service_tier_settings",
+  "detail": "Endpoint added: GET /organization/projects/{project_id}/service_tier_settings",
+  "symbols": [
+   "/organization/projects/{project_id}/service_tier_settings"
+  ],
+  "before_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "after_commit": "926a7b8133226630bac025350e84b0ca5c31d45a",
+  "intro_commit": "1e003ff2dcd5d813eec516525786cb31d70ca8e9",
+  "intro_date": "2026-11-03T19:16:31Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /organization/workload_identity_providers",
+  "detail": "Endpoint added: GET /organization/workload_identity_providers",
+  "symbols": [
+   "/organization/workload_identity_providers"
+  ],
+  "before_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "after_commit": "926a7b8133226630bac025350e84b0ca5c31d45a",
+  "intro_commit": "d5d3e0158bae888222ff6bf0a3f26d68e33b5f15",
+  "intro_date": "2026-11-03T18:52:10Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /organization/workload_identity_providers/{workload_identity_provider_id}",
+  "detail": "Endpoint added: GET /organization/workload_identity_providers/{workload_identity_provider_id}",
+  "symbols": [
+   "/organization/workload_identity_providers/{workload_identity_provider_id}"
+  ],
+  "before_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "after_commit": "926a7b8133226630bac025350e84b0ca5c31d45a",
+  "intro_commit": "d5d3e0158bae888222ff6bf0a3f26d68e33b5f15",
+  "intro_date": "2026-11-03T18:52:10Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules",
+  "detail": "Endpoint added: GET /organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules",
+  "symbols": [
+   "/organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules"
+  ],
+  "before_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "after_commit": "926a7b8133226630bac025350e84b0ca5c31d45a",
+  "intro_commit": "d5d3e0158bae888222ff6bf0a3f26d68e33b5f15",
+  "intro_date": "2026-11-03T18:52:10Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/GET /organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules/{workload_identity_federation_rule_id}",
+  "detail": "Endpoint added: GET /organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules/{workload_identity_federation_rule_id}",
+  "symbols": [
+   "/organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules/{workload_identity_federation_rule_id}"
+  ],
+  "before_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "after_commit": "926a7b8133226630bac025350e84b0ca5c31d45a",
+  "intro_commit": "d5d3e0158bae888222ff6bf0a3f26d68e33b5f15",
+  "intro_date": "2026-11-03T18:52:10Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /organization/projects/{project_id}/service_tier_settings",
+  "detail": "Endpoint added: POST /organization/projects/{project_id}/service_tier_settings",
+  "symbols": [
+   "/organization/projects/{project_id}/service_tier_settings"
+  ],
+  "before_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "after_commit": "926a7b8133226630bac025350e84b0ca5c31d45a",
+  "intro_commit": "1e003ff2dcd5d813eec516525786cb31d70ca8e9",
+  "intro_date": "2026-11-03T19:16:31Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /organization/workload_identity_providers",
+  "detail": "Endpoint added: POST /organization/workload_identity_providers",
+  "symbols": [
+   "/organization/workload_identity_providers"
+  ],
+  "before_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "after_commit": "926a7b8133226630bac025350e84b0ca5c31d45a",
+  "intro_commit": "d5d3e0158bae888222ff6bf0a3f26d68e33b5f15",
+  "intro_date": "2026-11-03T18:52:10Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /organization/workload_identity_providers/{workload_identity_provider_id}",
+  "detail": "Endpoint added: POST /organization/workload_identity_providers/{workload_identity_provider_id}",
+  "symbols": [
+   "/organization/workload_identity_providers/{workload_identity_provider_id}"
+  ],
+  "before_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "after_commit": "926a7b8133226630bac025350e84b0ca5c31d45a",
+  "intro_commit": "d5d3e0158bae888222ff6bf0a3f26d68e33b5f15",
+  "intro_date": "2026-11-03T18:52:10Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules",
+  "detail": "Endpoint added: POST /organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules",
+  "symbols": [
+   "/organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules"
+  ],
+  "before_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "after_commit": "926a7b8133226630bac025350e84b0ca5c31d45a",
+  "intro_commit": "d5d3e0158bae888222ff6bf0a3f26d68e33b5f15",
+  "intro_date": "2026-11-03T18:52:10Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
+  "locator": "/paths/POST /organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules/{workload_identity_federation_rule_id}",
+  "detail": "Endpoint added: POST /organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules/{workload_identity_federation_rule_id}",
+  "symbols": [
+   "/organization/workload_identity_providers/{workload_identity_provider_id}/federation_rules/{workload_identity_federation_rule_id}"
+  ],
+  "before_commit": "c2aecc2fbe1ddff3e7500a0eaa5c2bc4c19c5318",
+  "after_commit": "926a7b8133226630bac025350e84b0ca5c31d45a",
+  "intro_commit": "d5d3e0158bae888222ff6bf0a3f26d68e33b5f15",
+  "intro_date": "2026-11-03T18:52:10Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "aws-sdk-js",
+  "file": "CHANGELOG.md",
+  "severity": "DEPRECATION",
+  "kind": "changelog_entry",
+  "locator": "#[3.1164.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1163.0...v3.1164.0) (2026-11-06)",
+  "detail": "New changelog section '[3.1164.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1163.0...v3.1164.0) (2026-11-06)': * **client-ram:** Adds support for using managed permission template parameters, discovering shared customer-managed permissions, and managing customer-managed permission deprecation. ([87c5566](https://github.com/aws/aws-sdk-js-v3/commit/87c5566c7552538287647f1017cc580df9c756ba))",
+  "symbols": [
+   "client-athena",
+   "client-auto-scaling",
+   "client-bedrock-agent",
+   "client-connect",
+   "client-connectcases",
+   "client-datazone",
+   "client-eks-auth",
+   "client-glue",
+   "client-lightsail",
+   "client-mediaconvert",
+   "client-ram",
+   "client-ssm"
+  ],
+  "before_commit": "258c14447eefd8e028db1a50ab49aac8312c0af9",
+  "after_commit": "ea82eac3afd74c15510e427b91a9eff8292f178b",
+  "intro_commit": "ea82eac3afd74c15510e427b91a9eff8292f178b",
+  "intro_date": "2026-11-06T19:46:20Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "aws-sdk-js",
+  "file": "CHANGELOG.md",
+  "severity": "DEPRECATION",
+  "kind": "changelog_entry",
+  "locator": "#[3.1162.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1161.0...v3.1162.0) (2026-11-04)",
+  "detail": "New changelog section '[3.1162.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1161.0...v3.1162.0) (2026-11-04)': * **client-lookoutequipment:** Amazon Lookout for Equipment reached end of support on October 7, 2026. All Lookout for Equipment APIs are now marked as deprecated. ([9a4a688](https://github.com/aws/aws-sdk-js-v3/commit/9a4a6882371e75f079bd5bc25cacac31fb889a14))",
+  "symbols": [
+   "client-connect",
+   "client-connect-contact-lens",
+   "client-dynamodb",
+   "client-ec2",
+   "client-ecs",
+   "client-elastic-beanstalk",
+   "client-emr",
+   "client-iotsitewise",
+   "client-lookoutequipment",
+   "client-marketplace-discovery",
+   "client-mgn",
+   "client-mwaa-serverless"
+  ],
+  "before_commit": "258c14447eefd8e028db1a50ab49aac8312c0af9",
+  "after_commit": "ea82eac3afd74c15510e427b91a9eff8292f178b",
+  "intro_commit": "80cb7896f530f5d7cb33b3c5abbdae1212dbd768",
+  "intro_date": "2026-11-04T20:23:32Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "shopify-api-js",
+  "file": "packages/apps/shopify-api/CHANGELOG.md",
+  "severity": "BREAKING",
+  "kind": "changelog_entry",
+  "locator": "#15.1.1",
+  "detail": "New changelog section '15.1.1': Update `mongodb` to ^7.8.0 to fix CVE-2026-119179 and SRV host-name validation. MongoDB server 4.4 or newer is required. The driver no longer applies `timeoutMS` or `timeoutMode`; use per-stage timeouts instead.",
+  "symbols": [
+   "@parcel/watcher",
+   "mongodb",
+   "timeoutMS",
+   "timeoutMode"
+  ],
+  "before_commit": "8868403d534e2995253a16ee5f81ef9b5250fbc8",
+  "after_commit": "1db24d0bed1ce0f81bdea3f4296d6ac7b3246860",
+  "intro_commit": "1db24d0bed1ce0f81bdea3f4296d6ac7b3246860",
+  "intro_date": "2026-11-06T19:50:45Z",
+  "verified": true,
+  "cycle": 8
+ },
+ {
+  "source_id": "openai",
+  "file": "openapi.json",
+  "severity": "ADDITIVE",
+  "kind": "endpoint_added",
   "locator": "/paths/DELETE /organization/external_keys/{external_key_id}",
   "detail": "Endpoint added: DELETE /organization/external_keys/{external_key_id}",
   "symbols": [
