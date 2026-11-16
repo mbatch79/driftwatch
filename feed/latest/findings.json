@@ -1,5 +1,33 @@
 [
  {
+  "source_id": "aws-sdk-js",
+  "file": "CHANGELOG.md",
+  "severity": "DEPRECATION",
+  "kind": "changelog_entry",
+  "locator": "#[3.1169.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1168.0...v3.1169.0) (2026-11-13)",
+  "detail": "New changelog section '[3.1169.0](https://github.com/aws/aws-sdk-js-v3/compare/v3.1168.0...v3.1169.0) (2026-11-13)': * **client-network-firewall:** Releasing Firewall Proxy API and deprecating Egress Proxy API. ([ad6208f](https://github.com/aws/aws-sdk-js-v3/commit/ad6208fae26644f1ef957db0606c369cec8a8adb))",
+  "symbols": [
+   "client-appstream",
+   "client-cloudformation",
+   "client-cognito-identity-provider",
+   "client-connectcampaignsv2",
+   "client-deadline",
+   "client-devops-agent",
+   "client-ec2",
+   "client-glue",
+   "client-iam",
+   "client-imagebuilder",
+   "client-lambda",
+   "client-lambda-core"
+  ],
+  "before_commit": "ea82eac3afd74c15510e427b91a9eff8292f178b",
+  "after_commit": "2b5baaedefad259a64e4aa263034a9ff7474863e",
+  "intro_commit": "2b5baaedefad259a64e4aa263034a9ff7474863e",
+  "intro_date": "2026-11-13T19:32:38Z",
+  "verified": true,
+  "cycle": 9
+ },
+ {
   "source_id": "openai",
   "file": "openapi.json",
   "severity": "ADDITIVE",
